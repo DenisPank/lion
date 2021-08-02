@@ -1,0 +1,126 @@
+@media screen and (max-width: 1400px) {
+  .header__personal-button-wrapper {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__personal-button-wrapper {
+    width: auto;
+    margin: 0 20px;
+  }
+  .header__basket {
+    width: 40px;
+  }
+  .header__personal-button-wrapper {
+    margin: 0 20px 0 0;
+  }
+  .footer__number-link {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header__top-number,
+  .header__top-text {
+    margin: 0;
+    text-align: end;
+    margin-left: auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__top {
+    display: none;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__menu-mobil {
+    display: block;
+    padding: 15px 0;
+  }
+  .header__menu-burger {
+    margin: 0;
+  }
+  .header__menu-burger-catalog {
+    margin-right: 10px;
+  }
+  .header__dropdown .btn-secondary {
+    background-color: transparent;
+    border: none;
+  }
+  .header__menu-burger span {
+    background-color: #f09e00;
+  }
+  .header__basket {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+  .header__personal-button-wrapper {
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__navbar {
+    margin-top: 30px;
+  }
+  .dropdown,
+  .dropend,
+  .dropstart,
+  .dropup {
+    position: static;
+  }
+  .dropdown-menu {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-top: 1px solid #e5e5e5;
+    inset: 10px auto auto 0 !important;
+    transition: all 0.4s ease;
+    transform: translate3d(0px, -280%, 0px) !important;
+    padding: 25px 5px;
+  }
+  .dropdown-menu.show {
+    transform: translate3d(0px, 36px, 0px) !important;
+  }
+  .header__dropdown .btn {
+    font-family: "Ubuntu", sans-serif;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .header__btn-catalog-mobil svg {
+    margin-left: auto;
+  }
+  .header__btn-catalog-mobil {
+    padding-bottom: 20px !important;
+  }
+  .footer__list {
+    margin-top: 20px;
+  }
+  .footer__download-link {
+    margin: 5px 10px 0 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__number-link {
+    font-size: 27px;
+  }
+  .footer__date {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}
