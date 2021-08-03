@@ -72,3 +72,21 @@ const cardSwiper = new Swiper(".card-swiper", {
     swiper: cardSwiperSmall,
   },
 });
+if ($(".comments").length > 0) {
+  $(".comments__tab-1").click(function (e) {
+    e.preventDefault();
+    $(".comments__tab-content-1").addClass("active");
+    $(".comments__tab-content-2").removeClass("active");
+    $(".comments__tab-1").addClass("active");
+    $(".comments__tab-2").removeClass("active");
+    $(".comments__underline").removeClass("move");
+  });
+  $(".comments__tab-2").click(function (e) {
+    e.preventDefault();
+    $(".comments__tab-content-2").addClass("active");
+    $(".comments__tab-content-1").removeClass("active");
+    $(".comments__tab-2").addClass("active");
+    $(".comments__tab-1").removeClass("active");
+    $(".comments__underline").addClass("move");
+  });
+}

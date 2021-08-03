@@ -142,6 +142,10 @@ img {
 .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: none;
 }
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none;
+}
 .dropdown-item {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -1014,51 +1018,75 @@ nav[aria-label="breadcrumb"] {
   width: fit-content;
 }
 /* comments  */
-
-.tabs {
-  display: flex;
-  flex-direction: column;
-}
-
-.tabs__links {
-  display: flex;
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  order: 0;
-  white-space: nowrap;
-  background-color: #fff;
-  border: 1px solid #e3f2fd;
-  box-shadow: 0 2px 4px 0 #e3f2fd;
-}
-
-.tabs__links > a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 6px 10px;
-  text-align: center;
-  color: #1976d2;
-}
-
-.tabs__links > a:hover {
-  background-color: rgba(227, 242, 253, 0.3);
-}
-
-.tabs > #content-1:target ~ .tabs__links > a[href="#content-1"],
-.tabs > #content-2:target ~ .tabs__links > a[href="#content-2"],
-.tabs > #content-3:target ~ .tabs__links > a[href="#content-3"] {
-  background-color: #bbdefb;
-  cursor: default;
-}
-
-.tabs > div:not(.tabs__links) {
+.comments__tab-content {
   display: none;
-  order: 1;
 }
-
-.tabs > div:target {
+.comments__tab-content.active {
   display: block;
+}
+.comments__tab-wrapper {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.comments__tab {
+  margin-right: 30px;
+  color: #929292;
+  transition: color 0.4s ease;
+}
+.comments__tab.active {
+  color: #000;
+}
+.comments__underline {
+  width: 75px;
+  height: 1px;
+  background-color: #000;
+  bottom: -1px;
+  transition: transform 0.4s ease, width 0.7s ease;
+}
+.comments__underline {
+  transform: translateX(0);
+}
+.comments__underline.move {
+  width: 185px;
+  transform: translateX(100px);
+}
+.comments__tab-content {
+  padding: 30px 90px 0 0;
+}
+.comments__text {
+  margin-bottom: 25px;
+  color: #222222;
+}
+.comments__title {
+  margin-bottom: 30px;
+}
+.comments__btn {
+  background-color: transparent;
+  padding: 0;
+  margin: 60px 0 30px;
+  border: none;
+}
+.comments__btn:hover {
+  background: transparent;
+}
+.comments__info-5 .comments__star-wrapper svg path {
+  fill: #f09e00;
+}
+.comments__info-4 .comments__star-wrapper svg:last-child path {
+  fill: #9f9f9f;
+}
+.comments__info-3 .comments__star-wrapper svg:nth-child(n + 4) path {
+  fill: #9f9f9f;
+}
+.comments__info-2 .comments__star-wrapper svg:nth-child(n + 3) path {
+  fill: #9f9f9f;
+}
+.comments__info-1 .comments__star-wrapper svg:nth-child(n + 2) path {
+  fill: #9f9f9f;
+}
+.comments__amount {
+  margin-left: 16px;
+}
+[class^="comments__info-"] {
+  margin-bottom: 15px;
 }
