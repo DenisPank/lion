@@ -63,3 +63,12 @@ if ($("#slider").length > 0) {
     },
   });
 }
+const cardSwiperSmall = new Swiper(".card-product__swiper-small", {
+  direction: "vertical",
+  slidesPerView: 4,
+});
+const cardSwiper = new Swiper(".card-swiper", {
+  thumbs: {
+    swiper: cardSwiperSmall,
+  },
+});
