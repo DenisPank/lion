@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -176,6 +177,7 @@
                 <p class="link-header">Избранное</p>
               </div>
               <div class="header__personal-button-wrapper header__basket">
+                <a href="basket.html">
                 <svg
                   width="18"
                   height="18"
@@ -196,6 +198,7 @@
                     fill="black"
                   />
                 </svg>
+              </a>
               </div>
             </div>
           </div>
@@ -379,600 +382,86 @@
     </header>
     <div class="wrapper">
       <main class="main">
-       <section class="bread">
-         <div class="container">
-           <div class="row">
-             <div class="col-12">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                  <li class="breadcrumb-item"><a href="#">Каталог</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Овощи, фрукты, орехи</li>
-                </ol>
-              </nav>
-             </div>
-           </div>
-         </div>
-       </section>
-       <div class="container">
-         <div class="row">
-           <div class="col-2">
-             <section class="catalog">
-               <div class="catalog__wrapper">
-                 <div class="catalog__inner">
-                   <h3 class="catalog__title">КАТАЛОГ</h3>
-                   <ul class="catalog__list">
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Продукты в пост
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Молоко, яйца, сыр
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Мясо охлажденное
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Рыба и морепродукты 
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link active text">
-                        Овощи, фрукты, орехи
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Колбасы, сосиски, деликатесы
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Свежемороженные продукты
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Бакалея и консервы
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Булочная, кондитерская
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Напитки, чай, кофе
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Товары для детей
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Бытовая химия
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Гигиена и косметика
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Товары для дома
-                       </a>
-                     </li>
-                     <li class="catalog__item">
-                       <a href="#" class="catalog__link text">
-                        Товары для животных
-                       </a>
-                     </li>
-                   </ul>
-                 </div>
-                 <div class="catalog__option-wrapper">
-                   <div class="catalog__price">
-                      <a class="catalog__option-title link-header" data-bs-toggle="collapse" href="#collapseCatalog" role="button" aria-expanded="false" aria-controls="collapseCatalog">
-                        Цена
-                        <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="path-1-inside-1" fill="white">
-                          <path d="M6.75742 7.95318L0.307861 1.73013C-0.102621 1.33427 -0.102621 0.692445 0.307861 0.296776C0.717978 -0.0989251 1.38315 -0.0989251 1.79323 0.296776L7.50011 5.80321L13.2068 0.296936C13.6171 -0.0987652 14.2822 -0.0987652 14.6923 0.296936C15.1026 0.692637 15.1026 1.33443 14.6923 1.73029L8.24263 7.95334C8.03747 8.15119 7.76887 8.25 7.50014 8.25C7.23128 8.25 6.96248 8.151 6.75742 7.95318Z" fill="#535353"/>
-                          </mask>
-                          <path d="M6.75742 7.95318L0.307861 1.73013C-0.102621 1.33427 -0.102621 0.692445 0.307861 0.296776C0.717978 -0.0989251 1.38315 -0.0989251 1.79323 0.296776L7.50011 5.80321L13.2068 0.296936C13.6171 -0.0987652 14.2822 -0.0987652 14.6923 0.296936C15.1026 0.692637 15.1026 1.33443 14.6923 1.73029L8.24263 7.95334C8.03747 8.15119 7.76887 8.25 7.50014 8.25C7.23128 8.25 6.96248 8.151 6.75742 7.95318Z" fill="#535353"/>
-                          <path d="M6.75742 7.95318L4.67435 10.1121L4.67456 10.1123L6.75742 7.95318ZM0.307861 1.73013L2.39093 -0.428765L2.39038 -0.429302L0.307861 1.73013ZM0.307861 0.296776L2.38985 2.45671L2.3909 2.4557L0.307861 0.296776ZM1.79323 0.296776L-0.289894 2.45562L-0.289838 2.45567L1.79323 0.296776ZM7.50011 5.80321L5.41704 7.96211L7.50011 9.97202L9.58318 7.9621L7.50011 5.80321ZM13.2068 0.296936L11.1242 -1.86241L11.1237 -1.86195L13.2068 0.296936ZM14.6923 0.296936L12.6093 2.45586L12.6097 2.45628L14.6923 0.296936ZM14.6923 1.73029L12.6093 -0.428637L12.6092 -0.428621L14.6923 1.73029ZM8.24263 7.95334L10.3251 10.1128L10.3257 10.1122L8.24263 7.95334ZM8.84049 5.79429L2.39093 -0.428765L-1.77521 3.88902L4.67435 10.1121L8.84049 5.79429ZM2.39038 -0.429302C3.20291 0.354292 3.20368 1.67225 2.38985 2.45671L-1.77413 -1.86316C-3.40892 -0.28736 -3.40815 2.31424 -1.77465 3.88956L2.39038 -0.429302ZM2.3909 2.4557C1.63877 3.18139 0.46238 3.18151 -0.289894 2.45562L3.87636 -1.86206C2.30391 -3.37936 -0.202818 -3.37924 -1.77518 -1.86215L2.3909 2.4557ZM-0.289838 2.45567L5.41704 7.96211L9.58318 3.64432L3.8763 -1.86212L-0.289838 2.45567ZM9.58318 7.9621L15.2899 2.45582L11.1237 -1.86195L5.41703 3.64433L9.58318 7.9621ZM15.2894 2.45628C14.5377 3.18123 13.3617 3.18182 12.6093 2.45586L16.7753 -1.86199C15.2027 -3.37935 12.6964 -3.37876 11.1242 -1.86241L15.2894 2.45628ZM12.6097 2.45628C11.7965 1.67202 11.7972 0.354904 12.6093 -0.428637L16.7753 3.88921C18.408 2.31395 18.4086 -0.286745 16.7749 -1.86241L12.6097 2.45628ZM12.6092 -0.428621L6.15957 5.79443L10.3257 10.1122L16.7753 3.8892L12.6092 -0.428621ZM6.16011 5.79391C6.54716 5.42065 7.0392 5.25 7.50014 5.25L7.50014 11.25C8.49854 11.25 9.52778 10.8817 10.3251 10.1128L6.16011 5.79391ZM7.50014 5.25C7.96145 5.25 8.45334 5.4208 8.84029 5.79409L4.67456 10.1123C5.47162 10.8812 6.5011 11.25 7.50014 11.25L7.50014 5.25Z" fill="#535353" mask="url(#path-1-inside-1)"/>
-                          </svg>
-                          
-                      </a>
-                    <div class="collapse" id="collapseCatalog">
-                      <div class="catalog__price-inner">
-                        <div id="slider" class="text"></div>
-                      </div>
-                    </div>
-                   </div>
-                   <div class="catalog__production">
-                    <a class="catalog__option-title link-header" data-bs-toggle="collapse" href="#collapseproduction" role="button" aria-expanded="false" aria-controls="collapseproduction">
-                      Производство
-                      <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="path-1-inside-1" fill="white">
-                        <path d="M6.75742 7.95318L0.307861 1.73013C-0.102621 1.33427 -0.102621 0.692445 0.307861 0.296776C0.717978 -0.0989251 1.38315 -0.0989251 1.79323 0.296776L7.50011 5.80321L13.2068 0.296936C13.6171 -0.0987652 14.2822 -0.0987652 14.6923 0.296936C15.1026 0.692637 15.1026 1.33443 14.6923 1.73029L8.24263 7.95334C8.03747 8.15119 7.76887 8.25 7.50014 8.25C7.23128 8.25 6.96248 8.151 6.75742 7.95318Z" fill="#535353"/>
-                        </mask>
-                        <path d="M6.75742 7.95318L0.307861 1.73013C-0.102621 1.33427 -0.102621 0.692445 0.307861 0.296776C0.717978 -0.0989251 1.38315 -0.0989251 1.79323 0.296776L7.50011 5.80321L13.2068 0.296936C13.6171 -0.0987652 14.2822 -0.0987652 14.6923 0.296936C15.1026 0.692637 15.1026 1.33443 14.6923 1.73029L8.24263 7.95334C8.03747 8.15119 7.76887 8.25 7.50014 8.25C7.23128 8.25 6.96248 8.151 6.75742 7.95318Z" fill="#535353"/>
-                        <path d="M6.75742 7.95318L4.67435 10.1121L4.67456 10.1123L6.75742 7.95318ZM0.307861 1.73013L2.39093 -0.428765L2.39038 -0.429302L0.307861 1.73013ZM0.307861 0.296776L2.38985 2.45671L2.3909 2.4557L0.307861 0.296776ZM1.79323 0.296776L-0.289894 2.45562L-0.289838 2.45567L1.79323 0.296776ZM7.50011 5.80321L5.41704 7.96211L7.50011 9.97202L9.58318 7.9621L7.50011 5.80321ZM13.2068 0.296936L11.1242 -1.86241L11.1237 -1.86195L13.2068 0.296936ZM14.6923 0.296936L12.6093 2.45586L12.6097 2.45628L14.6923 0.296936ZM14.6923 1.73029L12.6093 -0.428637L12.6092 -0.428621L14.6923 1.73029ZM8.24263 7.95334L10.3251 10.1128L10.3257 10.1122L8.24263 7.95334ZM8.84049 5.79429L2.39093 -0.428765L-1.77521 3.88902L4.67435 10.1121L8.84049 5.79429ZM2.39038 -0.429302C3.20291 0.354292 3.20368 1.67225 2.38985 2.45671L-1.77413 -1.86316C-3.40892 -0.28736 -3.40815 2.31424 -1.77465 3.88956L2.39038 -0.429302ZM2.3909 2.4557C1.63877 3.18139 0.46238 3.18151 -0.289894 2.45562L3.87636 -1.86206C2.30391 -3.37936 -0.202818 -3.37924 -1.77518 -1.86215L2.3909 2.4557ZM-0.289838 2.45567L5.41704 7.96211L9.58318 3.64432L3.8763 -1.86212L-0.289838 2.45567ZM9.58318 7.9621L15.2899 2.45582L11.1237 -1.86195L5.41703 3.64433L9.58318 7.9621ZM15.2894 2.45628C14.5377 3.18123 13.3617 3.18182 12.6093 2.45586L16.7753 -1.86199C15.2027 -3.37935 12.6964 -3.37876 11.1242 -1.86241L15.2894 2.45628ZM12.6097 2.45628C11.7965 1.67202 11.7972 0.354904 12.6093 -0.428637L16.7753 3.88921C18.408 2.31395 18.4086 -0.286745 16.7749 -1.86241L12.6097 2.45628ZM12.6092 -0.428621L6.15957 5.79443L10.3257 10.1122L16.7753 3.8892L12.6092 -0.428621ZM6.16011 5.79391C6.54716 5.42065 7.0392 5.25 7.50014 5.25L7.50014 11.25C8.49854 11.25 9.52778 10.8817 10.3251 10.1128L6.16011 5.79391ZM7.50014 5.25C7.96145 5.25 8.45334 5.4208 8.84029 5.79409L4.67456 10.1123C5.47162 10.8812 6.5011 11.25 7.50014 11.25L7.50014 5.25Z" fill="#535353" mask="url(#path-1-inside-1)"/>
-                        </svg>
-                    </a>
-                  <div class="collapse" id="collapseproduction">
-                    <div class="catalog__production-inner">
-                      
-                    </div>
-                  </div>
-                 </div>
-                   <div class="catalog__type">
-                    <a class="catalog__option-title link-header" data-bs-toggle="collapse" href="#collapsetype" role="button" aria-expanded="false" aria-controls="collapsetype">
-                      Тип продукта
-                      <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="path-1-inside-1" fill="white">
-                        <path d="M6.75742 7.95318L0.307861 1.73013C-0.102621 1.33427 -0.102621 0.692445 0.307861 0.296776C0.717978 -0.0989251 1.38315 -0.0989251 1.79323 0.296776L7.50011 5.80321L13.2068 0.296936C13.6171 -0.0987652 14.2822 -0.0987652 14.6923 0.296936C15.1026 0.692637 15.1026 1.33443 14.6923 1.73029L8.24263 7.95334C8.03747 8.15119 7.76887 8.25 7.50014 8.25C7.23128 8.25 6.96248 8.151 6.75742 7.95318Z" fill="#535353"/>
-                        </mask>
-                        <path d="M6.75742 7.95318L0.307861 1.73013C-0.102621 1.33427 -0.102621 0.692445 0.307861 0.296776C0.717978 -0.0989251 1.38315 -0.0989251 1.79323 0.296776L7.50011 5.80321L13.2068 0.296936C13.6171 -0.0987652 14.2822 -0.0987652 14.6923 0.296936C15.1026 0.692637 15.1026 1.33443 14.6923 1.73029L8.24263 7.95334C8.03747 8.15119 7.76887 8.25 7.50014 8.25C7.23128 8.25 6.96248 8.151 6.75742 7.95318Z" fill="#535353"/>
-                        <path d="M6.75742 7.95318L4.67435 10.1121L4.67456 10.1123L6.75742 7.95318ZM0.307861 1.73013L2.39093 -0.428765L2.39038 -0.429302L0.307861 1.73013ZM0.307861 0.296776L2.38985 2.45671L2.3909 2.4557L0.307861 0.296776ZM1.79323 0.296776L-0.289894 2.45562L-0.289838 2.45567L1.79323 0.296776ZM7.50011 5.80321L5.41704 7.96211L7.50011 9.97202L9.58318 7.9621L7.50011 5.80321ZM13.2068 0.296936L11.1242 -1.86241L11.1237 -1.86195L13.2068 0.296936ZM14.6923 0.296936L12.6093 2.45586L12.6097 2.45628L14.6923 0.296936ZM14.6923 1.73029L12.6093 -0.428637L12.6092 -0.428621L14.6923 1.73029ZM8.24263 7.95334L10.3251 10.1128L10.3257 10.1122L8.24263 7.95334ZM8.84049 5.79429L2.39093 -0.428765L-1.77521 3.88902L4.67435 10.1121L8.84049 5.79429ZM2.39038 -0.429302C3.20291 0.354292 3.20368 1.67225 2.38985 2.45671L-1.77413 -1.86316C-3.40892 -0.28736 -3.40815 2.31424 -1.77465 3.88956L2.39038 -0.429302ZM2.3909 2.4557C1.63877 3.18139 0.46238 3.18151 -0.289894 2.45562L3.87636 -1.86206C2.30391 -3.37936 -0.202818 -3.37924 -1.77518 -1.86215L2.3909 2.4557ZM-0.289838 2.45567L5.41704 7.96211L9.58318 3.64432L3.8763 -1.86212L-0.289838 2.45567ZM9.58318 7.9621L15.2899 2.45582L11.1237 -1.86195L5.41703 3.64433L9.58318 7.9621ZM15.2894 2.45628C14.5377 3.18123 13.3617 3.18182 12.6093 2.45586L16.7753 -1.86199C15.2027 -3.37935 12.6964 -3.37876 11.1242 -1.86241L15.2894 2.45628ZM12.6097 2.45628C11.7965 1.67202 11.7972 0.354904 12.6093 -0.428637L16.7753 3.88921C18.408 2.31395 18.4086 -0.286745 16.7749 -1.86241L12.6097 2.45628ZM12.6092 -0.428621L6.15957 5.79443L10.3257 10.1122L16.7753 3.8892L12.6092 -0.428621ZM6.16011 5.79391C6.54716 5.42065 7.0392 5.25 7.50014 5.25L7.50014 11.25C8.49854 11.25 9.52778 10.8817 10.3251 10.1128L6.16011 5.79391ZM7.50014 5.25C7.96145 5.25 8.45334 5.4208 8.84029 5.79409L4.67456 10.1123C5.47162 10.8812 6.5011 11.25 7.50014 11.25L7.50014 5.25Z" fill="#535353" mask="url(#path-1-inside-1)"/>
-                        </svg>
-                    </a>
-                  <div class="collapse" id="collapsetype">
-                    <div class="catalog__production-inner">
-                      
-                    </div>
-                  </div>
-                 </div>
-                   <div class="catalog__brand">
-                    <a class="catalog__option-title link-header" data-bs-toggle="collapse" href="#collapsebrand" role="button" aria-expanded="false" aria-controls="collapsebrand">
-                      бренд
-                      <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="path-1-inside-1" fill="white">
-                        <path d="M6.75742 7.95318L0.307861 1.73013C-0.102621 1.33427 -0.102621 0.692445 0.307861 0.296776C0.717978 -0.0989251 1.38315 -0.0989251 1.79323 0.296776L7.50011 5.80321L13.2068 0.296936C13.6171 -0.0987652 14.2822 -0.0987652 14.6923 0.296936C15.1026 0.692637 15.1026 1.33443 14.6923 1.73029L8.24263 7.95334C8.03747 8.15119 7.76887 8.25 7.50014 8.25C7.23128 8.25 6.96248 8.151 6.75742 7.95318Z" fill="#535353"/>
-                        </mask>
-                        <path d="M6.75742 7.95318L0.307861 1.73013C-0.102621 1.33427 -0.102621 0.692445 0.307861 0.296776C0.717978 -0.0989251 1.38315 -0.0989251 1.79323 0.296776L7.50011 5.80321L13.2068 0.296936C13.6171 -0.0987652 14.2822 -0.0987652 14.6923 0.296936C15.1026 0.692637 15.1026 1.33443 14.6923 1.73029L8.24263 7.95334C8.03747 8.15119 7.76887 8.25 7.50014 8.25C7.23128 8.25 6.96248 8.151 6.75742 7.95318Z" fill="#535353"/>
-                        <path d="M6.75742 7.95318L4.67435 10.1121L4.67456 10.1123L6.75742 7.95318ZM0.307861 1.73013L2.39093 -0.428765L2.39038 -0.429302L0.307861 1.73013ZM0.307861 0.296776L2.38985 2.45671L2.3909 2.4557L0.307861 0.296776ZM1.79323 0.296776L-0.289894 2.45562L-0.289838 2.45567L1.79323 0.296776ZM7.50011 5.80321L5.41704 7.96211L7.50011 9.97202L9.58318 7.9621L7.50011 5.80321ZM13.2068 0.296936L11.1242 -1.86241L11.1237 -1.86195L13.2068 0.296936ZM14.6923 0.296936L12.6093 2.45586L12.6097 2.45628L14.6923 0.296936ZM14.6923 1.73029L12.6093 -0.428637L12.6092 -0.428621L14.6923 1.73029ZM8.24263 7.95334L10.3251 10.1128L10.3257 10.1122L8.24263 7.95334ZM8.84049 5.79429L2.39093 -0.428765L-1.77521 3.88902L4.67435 10.1121L8.84049 5.79429ZM2.39038 -0.429302C3.20291 0.354292 3.20368 1.67225 2.38985 2.45671L-1.77413 -1.86316C-3.40892 -0.28736 -3.40815 2.31424 -1.77465 3.88956L2.39038 -0.429302ZM2.3909 2.4557C1.63877 3.18139 0.46238 3.18151 -0.289894 2.45562L3.87636 -1.86206C2.30391 -3.37936 -0.202818 -3.37924 -1.77518 -1.86215L2.3909 2.4557ZM-0.289838 2.45567L5.41704 7.96211L9.58318 3.64432L3.8763 -1.86212L-0.289838 2.45567ZM9.58318 7.9621L15.2899 2.45582L11.1237 -1.86195L5.41703 3.64433L9.58318 7.9621ZM15.2894 2.45628C14.5377 3.18123 13.3617 3.18182 12.6093 2.45586L16.7753 -1.86199C15.2027 -3.37935 12.6964 -3.37876 11.1242 -1.86241L15.2894 2.45628ZM12.6097 2.45628C11.7965 1.67202 11.7972 0.354904 12.6093 -0.428637L16.7753 3.88921C18.408 2.31395 18.4086 -0.286745 16.7749 -1.86241L12.6097 2.45628ZM12.6092 -0.428621L6.15957 5.79443L10.3257 10.1122L16.7753 3.8892L12.6092 -0.428621ZM6.16011 5.79391C6.54716 5.42065 7.0392 5.25 7.50014 5.25L7.50014 11.25C8.49854 11.25 9.52778 10.8817 10.3251 10.1128L6.16011 5.79391ZM7.50014 5.25C7.96145 5.25 8.45334 5.4208 8.84029 5.79409L4.67456 10.1123C5.47162 10.8812 6.5011 11.25 7.50014 11.25L7.50014 5.25Z" fill="#535353" mask="url(#path-1-inside-1)"/>
-                        </svg>
-                    </a>
-                  <div class="collapse" id="collapsebrand">
-                    <div class="catalog__brand-inner">
-                      <div class="catalog__brand-letter">
-                        <p class="catalog__letter text">А</p>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                        <label class="form-check-label text" for="flexCheckDefault1">
-                          Бренд
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                        <label class="form-check-label text" for="flexCheckDefault2">
-                          Бренд
-                        </label>
-                      </div>
-                    </div>
-                      <div class="catalog__brand-letter">
-                        <p class="catalog__letter text">Б</p>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                        <label class="form-check-label text" for="flexCheckDefault1">
-                          Бренд
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                        <label class="form-check-label text" for="flexCheckDefault2">
-                          Бренд
-                        </label>
-                      </div>
-                    </div>
-                      <div class="catalog__brand-letter">
-                        <p class="catalog__letter text">В</p>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                        <label class="form-check-label text" for="flexCheckDefault1">
-                          Бренд
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                        <label class="form-check-label text" for="flexCheckDefault2">
-                          Бренд
-                        </label>
-                      </div>
-                    </div>
-                      <div class="catalog__brand-letter">
-                        <p class="catalog__letter text">Г</p>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                        <label class="form-check-label text" for="flexCheckDefault1">
-                          Бренд
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                        <label class="form-check-label text" for="flexCheckDefault2">
-                          Бренд
-                        </label>
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                 </div>
-                 </div>
-               </div>
-             </section>
-           </div>
-           <div class="col-8">
-             <section class="shop">
-              <div class="row">
-                <div class="col-12 d-flex justify-content-start flex-wrap">
-                  <a href="#" class="shop__hint hint active">овощи</a>
-                  <a href="#" class="shop__hint hint">фрукты</a>
-                  <a href="#" class="shop__hint hint">ягоды</a>
-                  <a href="#" class="shop__hint hint">грибы</a>
-                  <a href="#" class="shop__hint hint">зелень</a>
-                  <a href="#" class="shop__hint hint">соленья</a>
-                  <a href="#" class="shop__hint hint">сухофрукты</a>
-                  <a href="#" class="shop__hint hint">Еще</a>
+        <section class="basket__list">
+          <div class="container">
+            <div class="row justify-content-between basket__row">
+              <div class="col-3 p-0">
+                <div class="basket__code-wrapper form-floating">
+                  <input type="text" class="basket__code form-control" id="couponCode" placeholder="Введите код купона для скидки">
+                  <label for="couponCode">Введите код купона для скидки:</label>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="shop__priority d-flex justify-content-around">
-                    <a href="#" class="shop__priority-link text active">По популярности</a>
-                    <a href="#" class="shop__priority-link text">Новинки</a>
-                    <a href="#" class="shop__priority-link text">Сначала дешевые</a>
-                    <a href="#" class="shop__priority-link text">Сначала дорогие</a>
-                    <a href="#" class="shop__priority-link text">Высокий рейтинг</a>
-                    <a href="#" class="shop__priority-link text">Высокий рейтинг</a>
-                  </div>
+              <div class="col-5 d-flex justify-content-between align-items-center basket__answer-out">
+                <div class="basket__answer-wrapper">
+                  <p class="basket__answer">
+                    Итого:
+                    <span class="VAT">Сумма НДС: 0 руб.</span>
+                  </p>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="shop__wrapper d-flex justify-content-between flex-wrap">
-                    <a href="card-product.html">
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (2).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                  </a>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (1).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (4).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (3).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (2).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (1).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (4).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (3).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (2).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (1).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (4).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (3).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (2).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (1).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (4).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="shop__card card__product">
-                      <div class="card__img-wrapper">
-                        <img src="image/catalog/product (3).png" alt="Product" class="card__img">
-                      </div>
-                      <div class="card__content-wrapper">
-                        <div class="card__name-wrapper">
-                          <p class="card__name text">
-                            Вода
-                природная минераль
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="card__price price">256,90 руб.</div>
-                          <a href="#" class="card__btn"><span><img src="image/home-page/plus.svg" alt="plus"></span></a>
-                        </div>
-                        </div>
-                    </div>
-                  </div>
+                <div class="basket__total-wrapper">
+                  <p class="basket__total price">6 199 руб.</p>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="shop__page d-flex justify-content-center">
-                    <a href="#" class="shop__arrow shop__arrow-prev">
-                      <img src="image/catalog/arrow.png" alt="arrow" class="shop__page-arrow">
-                    </a>
-                    <a href="#" class="shop__page-number text active">
-                      1
-                    </a>
-                    <a href="#" class="shop__page-number text">
-                      2
-                    </a>
-                    <a href="#" class="shop__page-number text">
-                      3
-                    </a>
-                    <a href="#" class="shop__page-number text">
-                      ...
-                    </a>
-                    <a href="#" class="shop__page-number text">
-                      6
-                    </a>
-                    <a href="#" class="shop__arrow shop__arrow-next">
-                      <img src="image/catalog/arrow.png" alt="arrow" class="shop__page-arrow">
-                    </a>
-                  </div>
-                </div>
+                <a href="order.html" class="arrange btn">Оформить заказ</a>
               </div>
             </div>
-            <div class="col-2">
-              <section class="basket">
-                <div class="basket__wrapper">
-                  <h4 class="basket__tilte text-center">Корзина</h4>
-                  <div class="basket__inner">
-                    <div class="basket__product">
-                      <div class="basket__preview">
-                        <img src="" alt="Preview" class="basket__img">
-                      </div>
-                      <div class="basket__amount">
-                        
+          </div>
+        </section>
+        <section class="filter">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 p-0">
+                <div class="filter__block">
+                <div class="filter__top d-flex justify-content-between align-items-center">
+                  <div class="filter__code-wrapper form-floating">
+                    <input type="text" class="filter__code form-control" id="filterCode" placeholder="Фильтр">
+                    <label for="filterCode">Фильтр</label>
+                  </div>
+                  <p class="filter__text">В корзине <span class="amount-product">3</span> товара</p>
+                </div>
+                <div class="filter__bottom">
+                  <div class="filter__line-wrapper d-flex align-items-center">
+                    <div class="filter__line-img">
+                      <img src="image/basket/photo-basket (1).png" alt="Photo" class="filter__img">
+                    </div>
+                    <p class="filter__name-product text">Апельсины</p>
+                    <div class="ms-auto">
+                      <div class="filter__calc">
+                        <div></div>
+                        <p class="price">6 199 руб.</p>
                       </div>
                     </div>
                   </div>
-                  <div class="basket__sum text d-flex justify-content-between">
-                    <span class="sum-text">Общая сумма:</span>
-                    <span class="sum">
-                      3 500 руб.
-                    </span>
+                  <div class="filter__line-wrapper d-flex align-items-center">
+                    <div class="filter__line-img">
+                      <img src="image/basket/photo-basket (1).png" alt="Photo" class="filter__img">
+                    </div>
+                    <p class="filter__name-product text">Апельсины</p>
+                    <div class="ms-auto">
+                      <div class="filter__calc">
+                        <div></div>
+                        <p class="price">6 199 руб.</p>
+                      </div>
+                    </div>
                   </div>
-                  <button class="basket__btn btn">оформить заказ</button>
+                  <div class="filter__line-wrapper d-flex align-items-center">
+                    <div class="filter__line-img">
+                      <img src="image/basket/photo-basket (1).png" alt="Photo" class="filter__img">
+                    </div>
+                    <p class="filter__name-product text">Апельсины</p>
+                    <div class="ms-auto">
+                      <div class="filter__calc">
+                        <div></div>
+                        <p class="price">6 199 руб.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </section>
+              </div>
+              </div>
             </div>
-           </div>
-         </div>
-        </main>
+          </div>
+        </section>
+      </main>
       <footer class="footer">
         <div class="container">
           <div class="row justify-content-between">
