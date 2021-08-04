@@ -45,6 +45,30 @@ const brandSwiper = new Swiper(".brand__swiper", {
   spaceBetween: 30,
   slidesPerGroup: 4,
 });
+const alsoSwiper = new Swiper(".also__swiper", {
+  navigation: {
+    nextEl: ".also__next",
+    prevEl: ".also__prev",
+  },
+  pagination: {
+    el: ".also__pagination",
+  },
+  slidesPerView: 5,
+  spaceBetween: 20,
+  slidesPerGroup: 5,
+});
+const prepareSwiper = new Swiper(".prepare__swiper", {
+  navigation: {
+    nextEl: ".prepare__next",
+    prevEl: ".prepare__prev",
+  },
+  pagination: {
+    el: ".prepare__pagination",
+  },
+  slidesPerView: 5,
+  spaceBetween: 20,
+  slidesPerGroup: 5,
+});
 if ($("#slider").length > 0) {
   var slider = document.getElementById("slider");
 
