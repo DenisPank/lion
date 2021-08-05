@@ -27,6 +27,10 @@
     width: 100%;
     height: auto;
   }
+  .basket__answer-out {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @media screen and (max-width: 1400px) {
   .header__personal-button-wrapper {
@@ -125,6 +129,19 @@
     margin-left: auto;
     display: block;
   }
+  .basket__answer-out {
+    margin-top: 20px;
+  }
+  .basket__list {
+    padding: 20px 0 20px;
+  }
+  .basket__row {
+    padding: 30px;
+  }
+  .filter__top,
+  .filter__bottom {
+    padding: 30px;
+  }
   .preview__slide {
     padding: 20px 10px 0px 120px;
     height: 320px;
@@ -167,6 +184,12 @@
 @media screen and (max-width: 768px) {
   .header__top {
     display: none;
+  }
+  .basket__row {
+    padding: 0;
+  }
+  .basket__total {
+    margin: 10px 0;
   }
   .shop__card {
     max-width: 250px;
@@ -257,6 +280,9 @@
   .recipe__card-all {
     margin: 0 auto;
   }
+  .filter {
+    padding-bottom: 30px;
+  }
 }
 @media screen and (max-width: 576px) {
   .preview__slide {
@@ -265,6 +291,15 @@
     text-align: center;
     border-radius: 20px;
     padding: 20px 10px;
+  }
+  .filter__name-product {
+    margin-left: 10px;
+  }
+  .price {
+    font-size: 18px;
+  }
+  .basket__row {
+    padding: 10px;
   }
   .shop__card {
     max-width: 230px;
