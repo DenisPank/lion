@@ -1565,3 +1565,68 @@ nav[aria-label="breadcrumb"] {
 .payment__map {
   border-radius: 40px;
 }
+/* support  */
+.support__title {
+  margin-bottom: 60px;
+}
+.support__accordion-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  transition: color 0.4s ease;
+}
+.support__accordion-header {
+  color: #222222;
+}
+.support__accordion-button[aria-expanded="true"] {
+  color: #f09e00;
+}
+.support__accordion-button[aria-expanded="true"] svg path {
+  transition: stroke 0.4s ease;
+  stroke: #f09e00;
+}
+.support__accordion-button[aria-expanded="true"] svg {
+  transition: transform 0.2s ease;
+  transform: rotate(180deg);
+}
+.support__accordion-button[aria-expanded="false"] svg {
+  transition: transform 0.2s ease;
+  transform: rotate(0deg);
+}
+.support__item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+}
+.support__accordion-body {
+  color: #222222;
+  padding-top: 20px;
+}
+.support {
+  padding-bottom: 70px;
+}
+/* contact  */
+.contact__title {
+  margin-bottom: 60px;
+}
+
+.contact__text {
+  margin-left: 15px;
+}
+.contact__phone {
+  margin-bottom: 15px;
+}
+.contact__email {
+  margin-bottom: 30px;
+}
+.contact__adress,
+.contact__adress-all {
+  margin-bottom: 40px;
+}
+.contact__way {
+  margin-bottom: 30px;
+}
+.contact {
+  padding-bottom: 100px;
+}
