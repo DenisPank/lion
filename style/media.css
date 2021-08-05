@@ -48,6 +48,19 @@
   .blurb__wrapper {
     margin: 5px 0;
   }
+  .shop__hint-wrapper {
+    overflow-x: auto;
+  }
+  .shop__priority {
+    overflow-x: scroll;
+  }
+  .shop__priority-link {
+    white-space: nowrap;
+    margin-right: 20px;
+  }
+  .shop__card {
+    margin-bottom: 5px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .header__personal-button-wrapper {
@@ -56,6 +69,12 @@
   }
   .header__basket {
     width: 40px;
+  }
+  .shop {
+    padding-bottom: 25px;
+  }
+  .shop__card {
+    margin: 0 15px 30px 15px;
   }
   .header__personal-button-wrapper {
     margin: 0 20px 0 0;
@@ -126,10 +145,21 @@
     transform: translateX(50%);
     bottom: 60px;
   }
+  .shop__card {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  nav[aria-label="breadcrumb"] {
+    padding: 30px 0 10px 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__top {
     display: none;
+  }
+  .shop__card {
+    max-width: 250px;
+    margin-bottom: 10px;
   }
   .header__menu {
     display: none;
@@ -230,6 +260,9 @@
     border-radius: 20px;
     padding: 20px 10px;
   }
+  .shop__card {
+    max-width: 230px;
+  }
   .recipe__card-all {
     padding: 10px;
   }
@@ -240,6 +273,12 @@
   }
   .banner__img-wrapper {
     display: none;
+  }
+  .catalog__price,
+  .catalog__production,
+  .catalog__type,
+  .catalog__brand {
+    padding: 10px 0;
   }
   .banner__wrapper {
     text-align: center;
@@ -302,8 +341,14 @@
   .recipe {
     padding: 0 0 25px;
   }
+  .shop__page-number {
+    margin: 0 1px;
+  }
 }
 @media screen and (max-width: 425px) {
+  .shop__card {
+    max-width: 100%;
+  }
   .footer {
     padding: 30px 0;
   }
