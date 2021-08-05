@@ -1512,10 +1512,19 @@ nav[aria-label="breadcrumb"] {
 }
 .order__btn {
   display: block;
+  padding: 10px 28px;
   margin: 0 auto;
   margin-top: 30px;
 }
 .order__section {
   padding: 70px 0 100px;
   border-top: 1px solid #e5e5e5;
+}
+.order__left,
+.order__right {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter__line-wrapper:nth-child(1) {
+  padding-top: 0;
 }

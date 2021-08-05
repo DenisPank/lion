@@ -384,19 +384,36 @@
       <main class="main">
       <div class="container">
         <div class="row order__section">
-          <div class="col-6">
-            <section class="order">
-            <div class="order__wrapper">
-              <div class="order__top d-flex align-items-center">
-                <div>
-                  <img src="image/order/icon (4).png" alt="" class="order__top-img">
+          <div class="order__left col-6">
+            <div class="order__section-wrap col-12">
+              <section class="order">
+              <div class="order__wrapper">
+                <div class="order__top d-flex align-items-center">
+                  <div>
+                    <img src="image/order/icon (4).png" alt="" class="order__top-img">
+                  </div>
+                  <h4 class="order__title">Регион доставки</h4>
                 </div>
-                <h4 class="order__title">Регион доставки</h4>
-              </div>
-              <div class="order__bottom">
-                  <form class="order__location position-relative">
-                    <label for="searchLocation">* Местоположение</label>
-                    <input class="form-control order__input" type="text" placeholder="Белгород, Белгородская область, Россия" aria-label="Search" id="searchLocation" value="Белгород,">
+                <div class="order__bottom">
+                    <form class="order__location position-relative">
+                      <label for="searchLocation">* Местоположение</label>
+                      <input class="form-control order__input" type="text" placeholder="Белгород, Белгородская область, Россия" aria-label="Search" id="searchLocation" value="Белгород,">
+                      <span class="order__clear" onclick="this.previousElementSibling.value = ''">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="12.7273" height="1.41414" rx="0.707072" transform="matrix(0.707073 0.70714 -0.707073 0.70714 1.00098 2.28882e-05)" fill="#929292"/>
+                          <rect width="12.7273" height="1.41414" rx="0.707072" transform="matrix(-0.707073 0.70714 -0.707073 -0.707141 9.99902 1)" fill="#929292"/>
+                          </svg>
+                          
+                        </span>
+                      <button class="order__search position-absolute" type="submit"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.05515 0C3.61631 0 0 3.61628 0 8.05514C0 12.494 3.6163 16.1103 8.05515 16.1103C9.97491 16.1103 11.7383 15.4317 13.1243 14.3048L18.5755 19.7559C18.9008 20.0813 19.4305 20.0814 19.7559 19.7559C20.0814 19.4305 20.0814 18.9095 19.7559 18.5841L14.3048 13.133C15.4339 11.7463 16.1103 9.97705 16.1103 8.05514C16.1103 3.61628 12.494 0 8.05515 0ZM8.05515 1.66658C11.5933 1.66658 14.4437 4.51697 14.4437 8.05514C14.4437 11.5933 11.5933 14.4437 8.05515 14.4437C4.51701 14.4437 1.66658 11.5933 1.66658 8.05514C1.66658 4.51697 4.517 1.66658 8.05515 1.66658Z" fill="#929292"/>
+                        </svg>
+                        </button>
+                       
+                    </form>
+                  <div class="order__index position-relative">
+                    <label for="index" class="order__index-label">* Индекс</label>
+                    <input type="text" class="order__index-input order__input w-100" id="index" placeholder="">
                     <span class="order__clear" onclick="this.previousElementSibling.value = ''">
                       <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="12.7273" height="1.41414" rx="0.707072" transform="matrix(0.707073 0.70714 -0.707073 0.70714 1.00098 2.28882e-05)" fill="#929292"/>
@@ -404,239 +421,225 @@
                         </svg>
                         
                       </span>
-                    <button class="order__search position-absolute" type="submit"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8.05515 0C3.61631 0 0 3.61628 0 8.05514C0 12.494 3.6163 16.1103 8.05515 16.1103C9.97491 16.1103 11.7383 15.4317 13.1243 14.3048L18.5755 19.7559C18.9008 20.0813 19.4305 20.0814 19.7559 19.7559C20.0814 19.4305 20.0814 18.9095 19.7559 18.5841L14.3048 13.133C15.4339 11.7463 16.1103 9.97705 16.1103 8.05514C16.1103 3.61628 12.494 0 8.05515 0ZM8.05515 1.66658C11.5933 1.66658 14.4437 4.51697 14.4437 8.05514C14.4437 11.5933 11.5933 14.4437 8.05515 14.4437C4.51701 14.4437 1.66658 11.5933 1.66658 8.05514C1.66658 4.51697 4.517 1.66658 8.05515 1.66658Z" fill="#929292"/>
+                  </div>
+                </div>
+              </div>
+            </section>
+            </div>
+            <div class="order__section-wrap pe-2 col-6">
+              <div class="order__wrapper">
+                <div class="order__top d-flex align-items-center">
+                  <div>
+                    <img src="image/order/icon (2).png" alt="" class="order__top-img">
+                  </div>
+                  <h4 class="order__title">Способ доставки</h4>
+                </div>
+                <div class="order__bottom">
+                  <div class="order__delivery-wrapper">
+                    <input class="d-none" type="radio" name="delivery" id="runner">
+                    <label for="runner" class="order__delivery-text d-flex">СДЭК (Доставка курьером)
+                    </label>
+                    <p class="order__ranner-text">
+                      <span class="d-block">Стоимость: 0 руб.</span>
+                      <span class="d-block">Срок доставки: 1 день</span>
+                      <span class="d-block">Доставка заказа курьером компании СДЭК</span>
+                    </p>
+                  </div>
+                  <div class="order__delivery-wrapper">
+                    <input class="d-none" type="radio" name="delivery" id="self-call">
+                    <label for="self-call" class="order__delivery-text d-flex">Самовывоз из магазина
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order__section-wrap ps-2 col-6">
+              <div class="order__wrapper">
+                <div class="order__top d-flex align-items-center">
+                  <div>
+                    <img src="image/order/icon (1).png" alt="" class="order__top-img">
+                  </div>
+                  <h4 class="order__title">Способ оплаты</h4>
+                </div>
+                <div class="order__bottom">
+                  <div class="order__pay">
+                    <input type="checkbox" name="pay" id="inputPay" class="d-none">
+                    <label for="inputPay" class="order__pay-text d-flex">Оплата при получении</label>
+                    <p class="order__pay-subtext">
+                      Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт платёжных систем: МИР, VISA, Mastercard и JCB.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order__section-wrap col-12">
+              <div class="order__wrapper">
+                <div class="order__top d-flex align-items-center">
+                  <div>
+                    <img src="image/order/icon (5).png" alt="" class="order__top-img">
+                  </div>
+                  <h4 class="order__title">Покупатель</h4>
+                </div>
+                <div class="order__bottom">
+                  <div class="order__form-wrapper">
+                    <div class="d-flex flex-column">
+                      <label for="name" class="order__label-text">
+                        <span class="order__star">
+                          * 
+                        </span>
+                        Ф.И.О.
+                      </label>
+                      <input type="text" id="name" class="order__form" required>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <label for="email" class="order__label-text">
+                        <span class="order__star">
+                          * 
+                        </span>
+                        E-Mail
+                      </label>
+                      <input type="email" id="email" class="order__form" required>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <label for="tel" class="order__label-text">
+                        <span class="order__star">
+                          * 
+                        </span>
+                        Телефон
+                      </label>
+                      <input type="tel" id="tel" class="order__form" required>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <label for="adress" class="order__label-text">
+                        <span class="order__star">
+                          * 
+                        </span>
+                        Адрес доставки
+                      </label>
+                      <input type="text" id="adress" class="order__form" required>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <label for="textarea" class="order__label-text">
+                        Комментарии к заказу:
+                      </label>
+                      <input type="text" id="textarea" class="order__form order__textarea">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order__section-wrap col-12">
+              <div class="order__date">
+                <input type="checkbox" id="date" name="date" class="d-none" required>
+                <label for="date" class="order__label-date position-relative">  
+                 <span></span> Нажимая кнопку «Оформить заказ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</label>
+              </div>
+              <button type="submit" class="order__btn btn">Оформить заказ</button>
+            </div>
+          </div>
+          <div class="order__right col-6">
+            <div class="order__section-wrap col-12">
+              <section class="area">
+                <p class="area__attention text">Внимание!</p>
+                <p class="area__attention-text text">Доставка продуктов осуществляется только в пределах Белгородского района.
+                  Районы доступные для доставки Вы можете посмотреть на карте.</p>
+                  <div class="area__map">
+                    <img src="image/order/area.png" alt="Map" class="area__map-img">
+                  </div>
+                  <div class="progress area__progress-wrapper">
+                    <p class="area__text-prog text">Время доставки составит 1 час</p>
+                    <div class="area__progress progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"  style="width: 15%; background-color:#7dd0a1;">
+                    </div>
+                  </div>
+                  <div class="progress area__progress-wrapper">
+                    <p class="area__text-prog text">Время доставки составит 1 час</p>
+                    <div class="area__progress progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"  style="width: 15%; background-color:#F6C078;">
+                    </div>
+                  </div>
+              </section>
+            </div>
+            <div class="order__section-wrap col-12">
+              <div class="order__wrapper">
+                <div class="order__top d-flex align-items-center">
+                  <div>
+                    <img src="image/order/icon (3).png" alt="" class="order__top-img">
+                  </div>
+                  <h4 class="order__title">Товары в заказе</h4>
+                </div>
+                <div class="order__bottom">
+                  <div class="filter__line-wrapper d-flex align-items-center">
+                    <div class="filter__line-img">
+                      <img src="image/basket/photo-basket (1).png" alt="Photo" class="filter__img">
+                    </div>
+                    <p class="filter__name-product text">Апельсины <span class="d-block"><span class="order-amount">Количество:</span> 1 кг.</span></p>
+                    <div class="ms-auto">
+                      <div class="filter__calc">
+                        <div></div>
+                        <p class="order__price text">6 199 руб.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__line-wrapper d-flex align-items-center">
+                    <div class="filter__line-img">
+                      <img src="image/basket/photo-basket (1).png" alt="Photo" class="filter__img">
+                    </div>
+                    <p class="filter__name-product text">Апельсины <span class="d-block"><span class="order-amount">Количество:</span> 1 кг.</span></p>
+                    <div class="ms-auto">
+                      <div class="filter__calc">
+                        <div></div>
+                        <p class="order__price text">6 199 руб.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__line-wrapper d-flex align-items-center">
+                    <div class="filter__line-img">
+                      <img src="image/basket/photo-basket (1).png" alt="Photo" class="filter__img">
+                    </div>
+                    <p class="filter__name-product text">Апельсины <span class="d-block"><span class="order-amount">Количество:</span> 1 кг.</span></p>
+                    <div class="ms-auto">
+                      <div class="filter__calc">
+                        <div></div>
+                        <p class="order__price text">6 199 руб.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__code-wrapper order__code-wrapper form-floating">
+                    <input type="text" class="basket__code form-control" id="couponCode" placeholder="Введите код купона для скидки">
+                    <label for="couponCode">Введите код купона для скидки:</label>
+                    <button class="order__button" type="submit"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L19 9M19 9L11 17M19 9L1 9" stroke="#C7011A" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                       </button>
-                     
-                  </form>
-                <div class="order__index position-relative">
-                  <label for="index" class="order__index-label">* Индекс</label>
-                  <input type="text" class="order__index-input order__input w-100" id="index" placeholder="">
-                  <span class="order__clear" onclick="this.previousElementSibling.value = ''">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="12.7273" height="1.41414" rx="0.707072" transform="matrix(0.707073 0.70714 -0.707073 0.70714 1.00098 2.28882e-05)" fill="#929292"/>
-                      <rect width="12.7273" height="1.41414" rx="0.707072" transform="matrix(-0.707073 0.70714 -0.707073 -0.707141 9.99902 1)" fill="#929292"/>
-                      </svg>
-                      
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order__section-wrap col-12">
+              <div class="order__result text">
+                <p class="order__result-on d-flex justify-content-between">
+                  <span class="d-block order__result-first">Товаров на:</span>
+                  <span class="d-block">18 597 руб.</span>
+                </p>
+                <p class="order__result-transfer d-flex justify-content-between">
+                  <span class="d-block order__result-first">Доставка:</span>
+                  <span class="d-block">
+                    <span class="free">
+                      бесплатно
+  
                     </span>
-                </div>
-              </div>
-            </div>
-          </section>
-          </div>
-          <div class="col-6">
-            <section class="area">
-              <p class="area__attention text">Внимание!</p>
-              <p class="area__attention-text text">Доставка продуктов осуществляется только в пределах Белгородского района.
-                Районы доступные для доставки Вы можете посмотреть на карте.</p>
-                <div class="area__map">
-                  <img src="image/order/area.png" alt="Map" class="area__map-img">
-                </div>
-                <div class="progress area__progress-wrapper">
-                  <p class="area__text-prog text">Время доставки составит 1 час</p>
-                  <div class="area__progress progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"  style="width: 15%; background-color:#7dd0a1;">
-                  </div>
-                </div>
-                <div class="progress area__progress-wrapper">
-                  <p class="area__text-prog text">Время доставки составит 1 час</p>
-                  <div class="area__progress progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"  style="width: 15%; background-color:#F6C078;">
-                  </div>
-                </div>
-            </section>
-          </div>
-          <div class="col-3">
-            <div class="order__wrapper">
-              <div class="order__top d-flex align-items-center">
-                <div>
-                  <img src="image/order/icon (2).png" alt="" class="order__top-img">
-                </div>
-                <h4 class="order__title">Способ доставки</h4>
-              </div>
-              <div class="order__bottom">
-                <div class="order__delivery-wrapper">
-                  <input class="d-none" type="radio" name="delivery" id="runner">
-                  <label for="runner" class="order__delivery-text d-flex">СДЭК (Доставка курьером)
-                  </label>
-                  <p class="order__ranner-text">
-                    <span class="d-block">Стоимость: 0 руб.</span>
-                    <span class="d-block">Срок доставки: 1 день</span>
-                    <span class="d-block">Доставка заказа курьером компании СДЭК</span>
-                  </p>
-                </div>
-                <div class="order__delivery-wrapper">
-                  <input class="d-none" type="radio" name="delivery" id="self-call">
-                  <label for="self-call" class="order__delivery-text d-flex">Самовывоз из магазина
-                  </label>
-                </div>
+                    <span class="text-decoration-line-through d-block">
+                      390 руб.
+  
+                    </span>
+                    </span>
+                </p>
+                <p class="order__result-text d-flex justify-content-between">
+                  <span class="d-block order__result-first">Итого:</span>
+                  <span class="d-block">18 597 руб.</span>
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="order__wrapper">
-              <div class="order__top d-flex align-items-center">
-                <div>
-                  <img src="image/order/icon (1).png" alt="" class="order__top-img">
-                </div>
-                <h4 class="order__title">Способ оплаты</h4>
-              </div>
-              <div class="order__bottom">
-                <div class="order__pay">
-                  <input type="checkbox" name="pay" id="inputPay" class="d-none">
-                  <label for="inputPay" class="order__pay-text d-flex">Оплата при получении</label>
-                  <p class="order__pay-subtext">
-                    Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт платёжных систем: МИР, VISA, Mastercard и JCB.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="order__wrapper">
-              <div class="order__top d-flex align-items-center">
-                <div>
-                  <img src="image/order/icon (3).png" alt="" class="order__top-img">
-                </div>
-                <h4 class="order__title">Товары в заказе</h4>
-              </div>
-              <div class="order__bottom">
-                <div class="filter__line-wrapper d-flex align-items-center">
-                  <div class="filter__line-img">
-                    <img src="image/basket/photo-basket (1).png" alt="Photo" class="filter__img">
-                  </div>
-                  <p class="filter__name-product text">Апельсины <span class="d-block"><span class="order-amount">Количество:</span> 1 кг.</span></p>
-                  <div class="ms-auto">
-                    <div class="filter__calc">
-                      <div></div>
-                      <p class="order__price text">6 199 руб.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__line-wrapper d-flex align-items-center">
-                  <div class="filter__line-img">
-                    <img src="image/basket/photo-basket (1).png" alt="Photo" class="filter__img">
-                  </div>
-                  <p class="filter__name-product text">Апельсины <span class="d-block"><span class="order-amount">Количество:</span> 1 кг.</span></p>
-                  <div class="ms-auto">
-                    <div class="filter__calc">
-                      <div></div>
-                      <p class="order__price text">6 199 руб.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__line-wrapper d-flex align-items-center">
-                  <div class="filter__line-img">
-                    <img src="image/basket/photo-basket (1).png" alt="Photo" class="filter__img">
-                  </div>
-                  <p class="filter__name-product text">Апельсины <span class="d-block"><span class="order-amount">Количество:</span> 1 кг.</span></p>
-                  <div class="ms-auto">
-                    <div class="filter__calc">
-                      <div></div>
-                      <p class="order__price text">6 199 руб.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="basket__code-wrapper order__code-wrapper form-floating">
-                  <input type="text" class="basket__code form-control" id="couponCode" placeholder="Введите код купона для скидки">
-                  <label for="couponCode">Введите код купона для скидки:</label>
-                  <button class="order__button" type="submit"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L19 9M19 9L11 17M19 9L1 9" stroke="#C7011A" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="order__wrapper">
-              <div class="order__top d-flex align-items-center">
-                <div>
-                  <img src="image/order/icon (5).png" alt="" class="order__top-img">
-                </div>
-                <h4 class="order__title">Покупатель</h4>
-              </div>
-              <div class="order__bottom">
-                <div class="order__form-wrapper">
-                  <div class="d-flex flex-column">
-                    <label for="name" class="order__label-text">
-                      <span class="order__star">
-                        * 
-                      </span>
-                      Ф.И.О.
-                    </label>
-                    <input type="text" id="name" class="order__form" required>
-                  </div>
-                  <div class="d-flex flex-column">
-                    <label for="email" class="order__label-text">
-                      <span class="order__star">
-                        * 
-                      </span>
-                      E-Mail
-                    </label>
-                    <input type="email" id="email" class="order__form" required>
-                  </div>
-                  <div class="d-flex flex-column">
-                    <label for="tel" class="order__label-text">
-                      <span class="order__star">
-                        * 
-                      </span>
-                      Телефон
-                    </label>
-                    <input type="tel" id="tel" class="order__form" required>
-                  </div>
-                  <div class="d-flex flex-column">
-                    <label for="adress" class="order__label-text">
-                      <span class="order__star">
-                        * 
-                      </span>
-                      Адрес доставки
-                    </label>
-                    <input type="text" id="adress" class="order__form" required>
-                  </div>
-                  <div class="d-flex flex-column">
-                    <label for="textarea" class="order__label-text">
-                      Комментарии к заказу:
-                    </label>
-                    <input type="text" id="textarea" class="order__form order__textarea">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="order__result text">
-              <p class="order__result-on d-flex justify-content-between">
-                <span class="d-block order__result-first">Товаров на:</span>
-                <span class="d-block">18 597 руб.</span>
-              </p>
-              <p class="order__result-transfer d-flex justify-content-between">
-                <span class="d-block order__result-first">Доставка:</span>
-                <span class="d-block">
-                  <span class="free">
-                    бесплатно
-
-                  </span>
-                  <span class="text-decoration-line-through d-block">
-                    390 руб.
-
-                  </span>
-                  </span>
-              </p>
-              <p class="order__result-text d-flex justify-content-between">
-                <span class="d-block order__result-first">Итого:</span>
-                <span class="d-block">18 597 руб.</span>
-              </p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="order__date">
-              <input type="checkbox" id="date" name="date" class="d-none" required>
-              <label for="date" class="order__label-date position-relative">  
-               <span></span> Нажимая кнопку «Оформить заказ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</label>
-            </div>
-            <button type="submit" class="order__btn btn">Оформить заказ</button>
-          </div>
-          
         </div>
       </div>
       </main>
