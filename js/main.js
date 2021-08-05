@@ -9,6 +9,17 @@ const swiper = new Swiper(".swiper-container", {
   centeredSlides: true,
   slidesPerView: 1.32,
   spaceBetween: 30,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    1400: {
+      slidesPerView: 1.32,
+    },
+    1720: {
+      slidesPerView: 1.32,
+    },
+  },
 });
 const stockSwiper = new Swiper(".stock__swiper", {
   navigation: {
@@ -20,6 +31,23 @@ const stockSwiper = new Swiper(".stock__swiper", {
   },
   slidesPerView: 6,
   spaceBetween: 20,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    475: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1320: {
+      slidesPerView: 5,
+    },
+    1720: {
+      slidesPerView: 6,
+    },
+  },
 });
 const recipeSwiper = new Swiper(".recipe__swiper", {
   navigation: {
@@ -32,6 +60,23 @@ const recipeSwiper = new Swiper(".recipe__swiper", {
   slidesPerView: 4,
   slidesPerGroup: 4,
   spaceBetween: 20,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    1400: {
+      slidesPerView: 4,
+    },
+  },
 });
 const brandSwiper = new Swiper(".brand__swiper", {
   navigation: {
@@ -44,6 +89,34 @@ const brandSwiper = new Swiper(".brand__swiper", {
   slidesPerView: 7.5,
   spaceBetween: 30,
   slidesPerGroup: 4,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    475: {
+      slidesPerView: 2,
+    },
+    576: {
+      spaceBetween: 30,
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    1400: {
+      slidesPerView: 5,
+    },
+    1720: {
+      slidesPerView: 7.5,
+    },
+  },
 });
 const alsoSwiper = new Swiper(".also__swiper", {
   navigation: {
