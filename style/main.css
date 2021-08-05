@@ -436,11 +436,19 @@ img {
 }
 .preview__slide {
   padding: 100px 200px 80px 250px;
-  background-image: url("../image/home-page/bg-slide.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
   position: relative;
+}
+.preview__slide:nth-child(1) {
+  background-image: url("../image/home-page/bg-slide\ \(3\).png");
+}
+.preview__slide:nth-child(2) {
+  background-image: url("../image/home-page/bg-slide.png");
+}
+.preview__slide:nth-child(3) {
+  background-image: url("../image/home-page/bg-slide\ \(2\).png");
 }
 .preview__content {
   max-width: 585px;
