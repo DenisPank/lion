@@ -19,11 +19,27 @@
   .swiper__button-wrapper {
     width: 150px;
   }
+  .card-product__img-wrapper-big {
+    width: 100%;
+    height: auto;
+  }
+  .card-product__img-wrapper {
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 1400px) {
   .header__personal-button-wrapper {
     width: 100%;
     margin: 5px 0;
+  }
+  .stock__all-product,
+  .swiper__all-product {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
   }
   .preview__slide {
     background-size: cover;
@@ -38,10 +54,7 @@
   .stock__wrapper div div {
     width: 25%;
   }
-  .stock__all-product,
-  .swiper__all-product {
-    right: 740px;
-  }
+
   .banner__img-wrapper {
     width: 630px;
   }
@@ -99,9 +112,9 @@
   .stock__wrapper {
     padding: 30px 0 0;
   }
-  .stock__all-product,
-  .swiper__all-product {
-    right: 580px;
+  .comments,
+  .prepare {
+    padding: 50px 0;
   }
 }
 @media screen and (max-width: 992px) {
@@ -139,18 +152,16 @@
     background-image: none;
     background-color: #f09e00;
   }
-  .stock__all-product,
-  .swiper__all-product {
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 60px;
-  }
+
   .shop__card {
     margin: 0 auto;
     margin-bottom: 30px;
   }
   nav[aria-label="breadcrumb"] {
     padding: 30px 0 10px 0;
+  }
+  .comments__content-inner {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -246,11 +257,6 @@
   .recipe__card-all {
     margin: 0 auto;
   }
-  .stock__all-product,
-  .swiper__all-product {
-    width: 100%;
-    text-align: center;
-  }
 }
 @media screen and (max-width: 576px) {
   .preview__slide {
@@ -343,6 +349,38 @@
   }
   .shop__page-number {
     margin: 0 1px;
+  }
+  .card-product__swiper-small {
+    height: 220px;
+    margin-right: 0;
+  }
+  .comments__tab-content {
+    padding: 30px 0 0 0;
+  }
+  .comments__block {
+    padding: 30px 10px 30px 10px;
+    margin-bottom: 20px;
+  }
+  .card-product__star {
+    display: none !important;
+  }
+  .comments__tab {
+    margin-right: 10px;
+  }
+  .card-product__answer {
+    max-width: 170px;
+  }
+  .card-product__list {
+    font-size: 13px;
+  }
+  .card-product__rating {
+    margin-bottom: 10px;
+  }
+  .card-product__title {
+    margin-bottom: 15px;
+  }
+  .comments__underline.move {
+    transform: translateX(78px);
   }
 }
 @media screen and (max-width: 425px) {

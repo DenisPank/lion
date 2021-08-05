@@ -129,6 +129,32 @@ const alsoSwiper = new Swiper(".also__swiper", {
   slidesPerView: 5,
   spaceBetween: 20,
   slidesPerGroup: 5,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 5,
+    },
+    475: {
+      slidesPerView: 1.8,
+    },
+    576: {
+      slidesPerView: 1.8,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+    1720: {
+      slidesPerView: 5,
+    },
+  },
 });
 const prepareSwiper = new Swiper(".prepare__swiper", {
   navigation: {
@@ -141,6 +167,31 @@ const prepareSwiper = new Swiper(".prepare__swiper", {
   slidesPerView: 5,
   spaceBetween: 20,
   slidesPerGroup: 5,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    475: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 1.8,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+    1720: {
+      slidesPerView: 5,
+    },
+  },
 });
 if ($("#slider").length > 0) {
   var slider = document.getElementById("slider");
@@ -163,6 +214,19 @@ if ($("#slider").length > 0) {
 const cardSwiperSmall = new Swiper(".card-product__swiper-small", {
   direction: "vertical",
   slidesPerView: 4,
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    425: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    576: {
+      slidesPerView: 4,
+    },
+  },
 });
 const cardSwiper = new Swiper(".card-swiper", {
   thumbs: {
