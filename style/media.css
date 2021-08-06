@@ -43,6 +43,9 @@
     width: 100%;
     margin: 5px 0;
   }
+  .basket__wrapper {
+    padding: 15px 10px;
+  }
   .stock__all-product,
   .swiper__all-product {
     right: 50%;
@@ -96,6 +99,12 @@
   .header__basket {
     width: 40px;
   }
+  .about__title,
+  .payment__title,
+  .support__title,
+  .contact__title {
+    margin-bottom: 20px;
+  }
   .shop {
     padding-bottom: 25px;
   }
@@ -129,6 +138,9 @@
   .prepare {
     padding: 50px 0;
   }
+  .support__accordion-button {
+    text-align: start;
+  }
 }
 @media screen and (max-width: 992px) {
   .header__top-number,
@@ -137,6 +149,15 @@
     text-align: end;
     margin-left: auto;
     display: block;
+  }
+  .contact {
+    padding-bottom: 30px;
+  }
+  .support {
+    padding-bottom: 30px;
+  }
+  .about {
+    padding-bottom: 30px;
   }
   .basket__answer-out {
     margin-top: 20px;
@@ -192,6 +213,10 @@
   .order__right {
     height: fit-content;
   }
+  .support__accordion-button svg {
+    max-width: 20px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__top {
@@ -199,6 +224,9 @@
   }
   .basket__row {
     padding: 0;
+  }
+  .payment__way-wrapper {
+    margin-bottom: 10px;
   }
   .basket__total {
     margin: 10px 0;
@@ -303,6 +331,9 @@
     text-align: center;
     border-radius: 20px;
     padding: 20px 10px;
+  }
+  .support__accordion-header {
+    font-size: 16px;
   }
   .filter__name-product {
     margin-left: 10px;
