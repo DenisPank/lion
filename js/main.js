@@ -69,9 +69,11 @@ const recipeSwiper = new Swiper(".recipe__swiper", {
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
+      slidesPerGroup: 2,
     },
     1200: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
     },
     1400: {
       slidesPerView: 4,
@@ -93,9 +95,11 @@ const brandSwiper = new Swiper(".brand__swiper", {
     320: {
       slidesPerView: 1,
       spaceBetween: 0,
+      slidesPerGroup: 1,
     },
     475: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     576: {
       spaceBetween: 30,
@@ -103,18 +107,22 @@ const brandSwiper = new Swiper(".brand__swiper", {
     },
     768: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
     },
     992: {
       slidesPerView: 4,
+      slidesPerGroup: 4,
     },
     1200: {
       slidesPerView: 4,
     },
     1400: {
       slidesPerView: 5,
+      slidesPerGroup: 5,
     },
     1720: {
       slidesPerView: 7.5,
+      slidesPerGroup: 4,
     },
   },
 });
@@ -133,19 +141,24 @@ const alsoSwiper = new Swiper(".also__swiper", {
     320: {
       slidesPerView: 1.1,
       spaceBetween: 5,
+      slidesPerGroup: 1,
     },
     475: {
       slidesPerView: 1.8,
+      slidesPerGroup: 1,
     },
     576: {
       slidesPerView: 1.8,
       spaceBetween: 20,
+      slidesPerGroup: 1,
     },
     768: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     992: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
     },
     1200: {
       slidesPerView: 3,
@@ -153,6 +166,7 @@ const alsoSwiper = new Swiper(".also__swiper", {
     },
     1720: {
       slidesPerView: 5,
+      slidesPerGroup: 5,
     },
   },
 });
@@ -171,6 +185,7 @@ const prepareSwiper = new Swiper(".prepare__swiper", {
     320: {
       slidesPerView: 1,
       spaceBetween: 0,
+      slidesPerGroup: 1,
     },
     475: {
       slidesPerView: 1,
@@ -180,9 +195,11 @@ const prepareSwiper = new Swiper(".prepare__swiper", {
     },
     768: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     992: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
     },
     1200: {
       slidesPerView: 3,
@@ -190,6 +207,7 @@ const prepareSwiper = new Swiper(".prepare__swiper", {
     },
     1720: {
       slidesPerView: 5,
+      slidesPerGroup: 5,
     },
   },
 });

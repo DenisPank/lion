@@ -323,6 +323,9 @@
   .filter {
     padding-bottom: 30px;
   }
+  .payment {
+    padding-bottom: 50px;
+  }
 }
 @media screen and (max-width: 576px) {
   .preview__slide {
