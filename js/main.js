@@ -251,3 +251,20 @@ if ($(".comments").length > 0) {
     $(".comments__underline").addClass("move");
   });
 }
+const btns = document.querySelectorAll(".counter__btn");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const direction = this.dataset.direction;
+    const inp = this.parentElement.querySelector(".counter__value");
+    const currentValue = +inp.value;
+    let newValue;
+    if (direction === "plus") {
+      newValue = currentValue + 0.1;
+    } else {
+      newValue = currentValue - 0.1 > 0.1 ? currentValue - 0.1 : 0;
+    }
+    inp.value = newValue;
+  });
+});
