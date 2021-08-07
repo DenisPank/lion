@@ -59,10 +59,10 @@
     border-radius: 60px;
   }
   .preview__button-next {
-    right: 20px;
+    right: 40px;
   }
   .preview__button-prev {
-    left: 20px;
+    left: 40px;
   }
   .stock__wrapper div div {
     width: 25%;
@@ -98,6 +98,13 @@
   }
   .header__basket {
     width: 40px;
+  }
+  .recipe__card {
+    margin: 0 auto;
+  }
+  .recipe__card-all {
+    margin-top: 50px;
+    margin-right: 20px;
   }
   .about__title,
   .payment__title,
@@ -217,6 +224,9 @@
     max-width: 20px;
     width: 100%;
   }
+  .recipe__swiper .swiper__button-wrapper {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__top {
@@ -225,6 +235,7 @@
   .basket__row {
     padding: 0;
   }
+
   .payment__way-wrapper {
     margin-bottom: 10px;
   }
@@ -318,7 +329,7 @@
     width: 320px;
   }
   .recipe__card-all {
-    margin: 0 auto;
+    display: none;
   }
   .filter {
     padding-bottom: 30px;
@@ -326,14 +337,42 @@
   .payment {
     padding-bottom: 50px;
   }
+  .stock__hint {
+    margin: 0 5px;
+  }
+  .stock__button-wrapper,
+  .swiper__button-wrapper {
+    right: 0;
+  }
+  .preview__slide:nth-child(1),
+  .preview__slide:nth-child(2),
+  .preview__slide:nth-child(3) {
+    background-image: url("../image/home-page/foot\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right bottom;
+    padding-left: 50px;
+  }
+  .preview__slide:nth-child(3) {
+    background-image: url("../image/home-page/foot\ \(3\).png");
+  }
+  .preview__slide:nth-child(2) {
+    background-image: url("../image/home-page/foot\ \(2\).png");
+  }
+  .preview__button-next {
+    right: 30px;
+  }
+  .preview__button-prev {
+    left: 30px;
+  }
 }
 @media screen and (max-width: 576px) {
   .preview__slide {
     padding: 10px 10px 10px 20px;
     height: auto;
-    text-align: center;
+    text-align: left;
     border-radius: 20px;
-    padding: 20px 10px;
+    padding: 20px 30px 10px 30px;
   }
   .support__accordion-header {
     font-size: 16px;
@@ -362,7 +401,8 @@
     display: none;
   }
   .banner__img-wrapper {
-    display: none;
+    z-index: -1;
+    width: 360px;
   }
   .catalog__price,
   .catalog__production,
@@ -372,8 +412,11 @@
   }
   .banner__wrapper {
     text-align: center;
-    padding: 40px;
+    padding: 20px 40px;
     min-height: auto;
+    z-index: 1;
+    margin: 0;
+    margin-bottom: 15px;
   }
   .recipe__card,
   .brand__wrapper {
@@ -398,19 +441,40 @@
   }
   .stock__hint {
     padding: 12px 20px;
+    margin: 0;
+    margin-left: 12px;
   }
   .blurb__title {
     font-size: 31px;
     padding: 20px 10px 20px 10px;
   }
+  .stock__swiper {
+    display: none;
+  }
+  .stock__mobil {
+    display: flex;
+  }
   h1 {
-    font-size: 30px;
+    font-size: 24px;
+    max-width: 250px;
+    line-height: 1.291667em;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+  .preview__btn {
+    padding: 9px 10px;
   }
   .preview__title {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
   h2 {
     text-align: center;
+    font-size: 24px;
+  }
+  .stock__wrapper {
+    padding-top: 15px;
   }
   .stock__swiper,
   .swiper {
@@ -472,10 +536,75 @@
   .comments__btn {
     margin-top: 0;
   }
+  .stock {
+    padding: 15px 0 30px;
+  }
+  .stock__mobil {
+    margin-top: 10px;
+  }
+  .card__btn {
+    max-width: 46px;
+    width: 100%;
+  }
+  .stock__slide {
+    margin: 7px 0;
+    max-width: 48%;
+    padding: 10px 10px;
+    border-radius: 15px;
+  }
+  .stock__slide .card__img-wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
+  }
+  .stock__slide .card__img-wrapper::after {
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+  }
+  .stock__all-product {
+    transform: none;
+    width: fit-content;
+    margin-top: 25px;
+    width: 100%;
+    text-align: left;
+    display: block;
+  }
+  .banner__btn {
+    padding: 10px 49px;
+    margin-top: 10px;
+  }
+  .banner__content {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .recipe__title-mobil {
+    display: block;
+  }
+  .recipe__card {
+    min-height: fit-content;
+  }
+  .brand__title {
+    text-align: left;
+  }
+  .brand__wrapper {
+    max-width: 80px;
+    min-height: 80px;
+    padding: 16px;
+  }
 }
 @media screen and (max-width: 425px) {
+  .stock__slide-btn {
+    max-width: 30px;
+    height: 30px;
+    padding: 6px;
+  }
   .shop__card {
     max-width: 100%;
+  }
+  .preview__slide:nth-child(1) {
+    background-size: 90%;
   }
   .footer {
     padding: 30px 0;

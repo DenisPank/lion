@@ -11,7 +11,7 @@ const swiper = new Swiper(".swiper-container", {
   spaceBetween: 30,
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 1.06,
     },
     1400: {
       slidesPerView: 1.32,
@@ -57,26 +57,26 @@ const recipeSwiper = new Swiper(".recipe__swiper", {
   pagination: {
     el: ".recipe__pagination",
   },
-  slidesPerView: 4,
-  slidesPerGroup: 4,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
   spaceBetween: 20,
   breakpoints: {
     320: {
       slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: 0,
+      spaceBetween: 10,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
     },
     1200: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
+      slidesPerView: 1.6,
+      slidesPerGroup: 2,
     },
     1400: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
   },
 });
@@ -93,20 +93,30 @@ const brandSwiper = new Swiper(".brand__swiper", {
   slidesPerGroup: 4,
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 3.5,
       spaceBetween: 0,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+    },
+    425: {
+      slidesPerView: 4.5,
+      spaceBetween: 10,
       slidesPerGroup: 1,
     },
     475: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerView: 5,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
     },
     576: {
-      spaceBetween: 30,
-      slidesPerView: 3,
+      spaceBetween: 10,
+      slidesPerView: 2.5,
+      slidesPerGroup: 1,
     },
     768: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
       slidesPerGroup: 3,
     },
     992: {

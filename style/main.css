@@ -213,6 +213,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom: 17px;
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
@@ -505,6 +506,7 @@ img {
   border-radius: 190px;
   background: #fff;
   opacity: 0.35;
+  transition: background-color 0.4s ease;
 }
 
 .preview__button-next:hover,
@@ -649,11 +651,13 @@ img {
   overflow: hidden;
   min-height: 289px;
   margin: 9px 0;
+  z-index: 1;
 }
 .banner__img-wrapper {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
 .banner__title {
   max-width: 460px;
@@ -690,6 +694,9 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-height: 475px;
+  margin-top: 50px;
+  margin-right: 20px;
 }
 .recipe__title {
   color: #fff;
@@ -1784,4 +1791,17 @@ nav[aria-label="breadcrumb"] {
 }
 .card__btn:hover {
   background-color: #47bb02 !important;
+}
+.recipe__swiper .swiper__button-wrapper {
+  width: 150px;
+}
+.stock__mobil {
+  display: none;
+}
+.recipe__title-mobil {
+  display: none;
+}
+.preview__button-next:hover,
+.preview__button-prev:hover {
+  background-color: #fff;
 }
