@@ -16,6 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/nouislider.min.css">
     <link rel="stylesheet" href="style/main.css" />
@@ -273,14 +274,17 @@
                 </ul>
               </div>
               <div class="header__logo-wrapper">
-                <img
+                <a href="index.html">
+
+                  <img
                   class="header__logo"
                   src="image/home-page/logo-mobil.svg"
                   alt="logo"
-                />
+                  />
+                </a>
               </div>
               <div class="header__personal-wrapper d-flex">
-              <div class="header__personal-button-wrapper">
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="17"
                   height="20"
@@ -297,8 +301,8 @@
                     fill="#222222"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper">
+              </a>
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="19"
                   height="18"
@@ -311,8 +315,8 @@
                     fill="black"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper header__basket">
+              </a>
+              <a href="basket.html" class="header__personal-button-wrapper header__basket">
                 <svg
                   width="18"
                   height="18"
@@ -333,7 +337,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </a>
             </div>
             </div>
             <div class="col-12">
@@ -378,7 +382,7 @@
             <div class="row">
               <div class="col-12">
                <nav aria-label="breadcrumb">
-                 <ol class="breadcrumb">
+                 <ol class="breadcrumb wow fadeInLeft">
                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
                    <li class="breadcrumb-item active" aria-current="page">О компании</li>
                  </ol>
@@ -390,7 +394,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-2">
-              <section class="page">
+              <section class="page wow fadeInLeft">
                 <div class="page__wrapper">
                   <a href="about.html" class="page__link d-block text">О компании</a>
                   <a href="payment.html" class="page__link d-block text">Способы оплаты</a>
@@ -401,20 +405,20 @@
             </div>
             <div class="col-xxl-8 col-lg-7">
            <section class="contact">
-             <h2 class="contact__title">Контакты</h2>
-             <div class="d-flex align-items-center contact__phone">
+             <h2 class="contact__title wow fadeInUp">Контакты</h2>
+             <div class="d-flex align-items-center contact__phone wow fadeInUp">
                <div>
                  <img src="image/contacts/contact (4).png" alt="Icon" class="contact-icon d-block">
                </div>
                <p class="contact__text d-block text">8 800 400 500 20</p>
              </div>
-             <div class="d-flex align-items-center contact__email">
+             <div class="d-flex align-items-center contact__email wow fadeInUp">
                <div>
                  <img src="image/contacts/contact (3).png" alt="Icon" class="contact-icon d-block">
                </div>
                <p class="contact__text d-block text">leon@info.com</p>
              </div>
-             <div class="contact__adress">
+             <div class="contact__adress wow fadeInUp">
               <div class="d-flex align-items-center">
                 <div>
                   <img src="image/contacts/contact (1).png" alt="Icon" class="contact-icon d-block">
@@ -425,7 +429,7 @@
                <p class="contact__text-bottom d-block text">121596,Москва,ул. Барвихинская, д. 8
                </p>
             </div>
-             <div class="contact__adress-all">
+             <div class="contact__adress-all wow fadeInUp">
                <div class="d-flex align-items-center">
                  <div>
                    <img src="image/contacts/contact (2).png" alt="Icon" class="contact-icon d-block">
@@ -437,7 +441,7 @@
                 <p class="contact__text-bottom d-block text">143026, Московская обл., Одинцовский р-н, р.п. Новоивановское, ул. Амбулаторная, 146
                 </p>
              </div>
-             <div class="contact__way">
+             <div class="contact__way wow fadeInUp">
               <p class="text d-block">Как добраться:
               </p>
               <p class="text d-block">
@@ -445,13 +449,13 @@
 
               </p>
              </div>
-             <div class="payment__map">
+             <div class="payment__map wow fadeInUp">
               <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06fda4574f21930267311f7fd0ba6120ce3883c80501868f6284fac419420a4c&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
              </div>
            </section>
              </div>
              <div class="col-xxl-2 col-xl-3">
-              <section class="basket">
+              <section class="basket wow fadeInRight">
                 <div class="basket__wrapper">
                   <h4 class="basket__tilte text-center">Корзина</h4>
                   <div class="basket__inner">
@@ -786,5 +790,13 @@
     ></script>
     <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+  mobile: false,
+});
+wow.init();
+
+    </script>
   </body>
 </html>

@@ -18,3 +18,13 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Songer";
+  src: url("../fonts/SONGERSemiExpanded-Medium.eot");
+  src: url("../fonts/SONGERSemiExpanded-Medium.eot?iefix") format("eot"),
+    url("../fonts/SONGERSemiExpanded-Medium.woff") format("woff"),
+    url("../fonts/SONGERSemiExpanded-Medium.ttf") format("truetype"),
+    url("../fonts/SONGERSemiExpanded-Medium.svg#webfont") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}

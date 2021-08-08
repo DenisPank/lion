@@ -15,6 +15,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/media.css" />
@@ -269,14 +270,17 @@
                 </ul>
               </div>
               <div class="header__logo-wrapper">
+                <a href="index.html"
+                >
                 <img
-                  class="header__logo"
-                  src="image/home-page/logo-mobil.svg"
-                  alt="logo"
+                class="header__logo"
+                src="image/home-page/logo-mobil.svg"
+                alt="logo"
                 />
+              </a>
               </div>
               <div class="header__personal-wrapper d-flex">
-              <div class="header__personal-button-wrapper">
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="17"
                   height="20"
@@ -293,8 +297,8 @@
                     fill="#222222"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper">
+              </a>
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="19"
                   height="18"
@@ -307,8 +311,8 @@
                     fill="black"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper header__basket">
+              </a>
+              <a href="basket.html" class="header__personal-button-wrapper header__basket">
                 <svg
                   width="18"
                   height="18"
@@ -329,7 +333,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </a>
             </div>
             </div>
             <div class="col-12">
@@ -373,7 +377,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-12 g-0">
-<div class="swiper-container preview__swiper">
+<div class="swiper-container preview__swiper wow fadeInUp">
   <div class="swiper-wrapper">
     <div class="swiper-slide preview__slide">
       <div class="preview__content">
@@ -415,41 +419,41 @@
           <div class="container">
             <div class="row">
               <div class="col-12 d-flex justify-content-center">
-                <h2 class="stock__title">Акции недели</h2>
+                <h2 class="stock__title wow fadeInLeft">Акции недели</h2>
               </div>
             </div>
             <div class="stock__wrapper">
                 <div class="row d-flex justify-content-xxl-between p-0">
                   <div class="col-xxl-1 px-0 px-md-3">
-                    <a href="#" class="stock__hint hint active">Все</a>
+                    <a href="#" class="stock__hint hint active wow fadeInLeft">Все</a>
                   </div>
                   <div class="col-xxl-2 px-0 px-md-3">
-                    <a href="#" class="stock__hint hint">Колбасы и сыры </a>
+                    <a href="#" class="stock__hint hint wow fadeInLeft">Колбасы и сыры </a>
                   </div>
                   <div class="col-xxl-2 px-0 px-md-3">
-                    <a href="#" class="stock__hint hint">Рыба и морепродукты</a>
+                    <a href="#" class="stock__hint hint wow fadeInLeft">Рыба и морепродукты</a>
                   </div>
                   <div class="col-xxl-1 px-0 px-md-3">
-                    <a href="#" class="stock__hint hint">мясо</a>
+                    <a href="#" class="stock__hint hint wow fadeInUp">мясо</a>
                   </div>
                   <div class="col-xxl-2 px-0 px-md-3">
-                    <a href="#" class="stock__hint hint">молочные продукты</a>
+                    <a href="#" class="stock__hint hint wow fadeInUp">молочные продукты</a>
                   </div>
                   <div class="col-xxl-2 px-0 px-md-3">
-                    <a href="#" class="stock__hint hint">Бытовая химия</a>
+                    <a href="#" class="stock__hint hint wow fadeInRight">Бытовая химия</a>
                   </div>
                   <div class="col-xxl-1 px-0 px-md-3">
-                    <a href="#" class="stock__hint hint">Консервы</a>
+                    <a href="#" class="stock__hint hint wow fadeInRight">Консервы</a>
                   </div>
                   <div class="col-xxl-1 px-0 px-md-3">
-                    <a href="#" class="stock__hint hint">Сладости</a>
+                    <a href="#" class="stock__hint hint wow fadeInRight">Сладости</a>
                   </div>
               </div>
             </div>
             </div>
             <div class="container-fluid">
             <div class="row">
-<div class="stock__swiper">
+<div class="stock__swiper wow fadeInUp">
   <div class="swiper-wrapper">
     <div class="swiper-slide stock__slide card__product">
       <div class="card__img-wrapper">
@@ -641,7 +645,7 @@
     
   </div>
   <div class="swiper-pagination stock__pagination"></div>
-  <a href="#" class="stock__all-product hint position-absolute">Все акционные товары раздела</a>
+  <a href="catalog.html" class="stock__all-product hint position-absolute">Все акционные товары раздела</a>
   <div class="stock__button-wrapper position-absolute col-1">
     <div class="swiper-button-prev stock__prev"></div>
     <div class="swiper-button-next stock__next"></div>
@@ -718,7 +722,7 @@
   </div>
   
   <div class="w-100 text-center">
-    <a href="#" class="stock__all-product hint">Все акционные товары </a>
+    <a href="catalog.html" class="stock__all-product hint">Все акционные товары </a>
   </div>
 </div>
 </div>           
@@ -728,7 +732,7 @@
           <div class="container">
             <div class="row">
               <div class="col-xl-12 col-xxl-6">
-                <div class="banner__wrapper">
+                <div class="banner__wrapper wow fadeInUp" data-wow-duration="1s">
                   <div class="banner__content">
                     <h3 class="banner__title">Фирменная
 свежая выпечка</h3>
@@ -740,7 +744,7 @@
                 </div>
               </div>
               <div class="col-xl-12 col-xxl-6">
-                <div class="banner__wrapper">
+                <div class="banner__wrapper wow fadeInUp" data-wow-duration="1.4s">
                   <div class="banner__content">
                     <h3 class="banner__title">Фермерские продукты
                       с области</h3>
@@ -752,7 +756,7 @@
                 </div>
               </div>
               <div class="col-xl-12 col-xxl-6">
-                <div class="banner__wrapper">
+                <div class="banner__wrapper wow fadeInUp" data-wow-duration="1.8s">
                   <div class="banner__content">
                     <h3 class="banner__title">Линейка продуктов
                       для здорового питания</h3>
@@ -764,7 +768,7 @@
                 </div>
               </div>
               <div class="col-xl-12 col-xxl-6">
-                <div class="banner__wrapper">
+                <div class="banner__wrapper wow fadeInUp" data-wow-duration="2.2s">
                   <div class="banner__content">
                     <h3 class="banner__title">Кулинария</h3>
 <a href="#" class="banner__btn btn">Перейти</a>
@@ -781,9 +785,9 @@
           <div class="container">
             <div class="row">
               <div class="col-12 d-md-flex">
-                <h3 class="recipe__title-mobil">Новые рецепты
+                <h3 class="recipe__title-mobil wow fadeInRight">Новые рецепты
                   каждую неделю</h3>
-                <div class="recipe__card recipe__card-all">
+                <div class="recipe__card recipe__card-all wow fadeInLeft">
                   <h3 class="recipe__title">Новые рецепты
                     каждую неделю</h3>
                     <div class="recipe__btn btn">Показать все</div>
@@ -791,7 +795,7 @@
                 <div class="recipe__swiper swiper">
                   <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="recipe__card">
+                    <div class="recipe__card wow fadeInUp" data-wow-duration="1s">
                       <div class="recipe__img-wrapper">
                         <img src="image/home-page/meal (1).png" alt="Photo" class="recipe__img">
                       </div>
@@ -805,7 +809,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="recipe__card">
+                    <div class="recipe__card wow fadeInUp" data-wow-duration="1.4s">
                       <div class="recipe__img-wrapper">
                         <img src="image/home-page/meal (3).png" alt="Photo" class="recipe__img">
                       </div>
@@ -819,7 +823,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="recipe__card">
+                    <div class="recipe__card wow fadeInUp" data-wow-duration="1.8s">
                       <div class="recipe__img-wrapper">
                         <img src="image/home-page/meal (2).png" alt="Photo" class="recipe__img">
                       </div>
@@ -904,7 +908,7 @@
                   </div>
                   </div>
                   <div class="swiper-pagination recipe__pagination"></div>
-                  <a href="#" class="swiper__all-product hint position-absolute">Все акционные товары раздела</a>
+                  <a href="catalog.html" class="swiper__all-product hint position-absolute">Все акционные товары раздела</a>
                   <div class="swiper__button-wrapper position-absolute col-1">
                     <div class="swiper-button-prev recipe__prev"></div>
                     <div class="swiper-button-next recipe__next"></div>
@@ -918,7 +922,7 @@
           <div class="container">
             <div class="row">
               <div class="col-xl-12 col-xxl-6">
-                <div class="blurb__wrapper" style="background-image: url(image/home-page/bg-blurb-1.png);">
+                <div class="blurb__wrapper wow fadeInLeft" style="background-image: url(image/home-page/bg-blurb-1.png);">
                   <h3 class="blurb__title">
 <span>Молочная продукция</span>
 Белый город
@@ -926,7 +930,7 @@
                 </div>
               </div>
               <div class="col-xl-12 col-xxl-6">
-                <div class="blurb__wrapper" style="background-image: url(image/home-page/bg-blurb-2.png);">
+                <div class="blurb__wrapper wow fadeInRight" style="background-image: url(image/home-page/bg-blurb-2.png);">
                   <h3 class="blurb__title" style="color: #fff;">
 <span>Кондитерная фабрика </span>
 Белогорье
@@ -940,12 +944,12 @@
           <div class="container">
             <div class="row">
               <div class="col-12 text-center">
-                <h2 class="brand__title">любимые бренды</h2>
+                <h2 class="brand__title wow fadeInRight">любимые бренды</h2>
               </div>
               </div>
               <div class="row">
                 <div class="col-12 px-0 px-sm-1">
-                  <div class="brand__swiper swiper">
+                  <div class="brand__swiper swiper wow fadeInUp">
                     <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="brand__wrapper">
@@ -1012,10 +1016,9 @@
                         <img src="image/home-page/brand (4).png" alt="Brand" class="brand__img">
                       </div>
                     </div>
-                    
                     </div>
                     <div class="swiper-pagination brand__pagination"></div>
-                    <a href="#" class="swiper__all-product hint position-absolute">Все акционные товары раздела</a>
+                    <a href="catalog.html" class="swiper__all-product hint position-absolute">Все акционные товары раздела</a>
                     <div class="swiper__button-wrapper position-absolute col-1">
                       <div class="swiper-button-prev brand__prev"></div>
                       <div class="swiper-button-next brand__next"></div>
@@ -1133,5 +1136,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+  mobile: false,
+});
+wow.init();
+
+    </script>
   </body>
 </html>

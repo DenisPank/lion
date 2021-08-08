@@ -16,6 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/nouislider.min.css">
     <link rel="stylesheet" href="style/main.css" />
@@ -273,14 +274,17 @@
                 </ul>
               </div>
               <div class="header__logo-wrapper">
+                <a href="index.html"
+                >
                 <img
-                  class="header__logo"
-                  src="image/home-page/logo-mobil.svg"
-                  alt="logo"
+                class="header__logo"
+                src="image/home-page/logo-mobil.svg"
+                alt="logo"
                 />
+              </a>
               </div>
               <div class="header__personal-wrapper d-flex">
-              <div class="header__personal-button-wrapper">
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="17"
                   height="20"
@@ -297,8 +301,8 @@
                     fill="#222222"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper">
+              </a>
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="19"
                   height="18"
@@ -311,8 +315,8 @@
                     fill="black"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper header__basket">
+              </a>
+              <a href="basket.html" class="header__personal-button-wrapper header__basket">
                 <svg
                   width="18"
                   height="18"
@@ -333,7 +337,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </a>
             </div>
             </div>
             <div class="col-12">
@@ -378,7 +382,7 @@
             <div class="row">
               <div class="col-12">
                <nav aria-label="breadcrumb">
-                 <ol class="breadcrumb">
+                 <ol class="breadcrumb wow fadeInLeft">
                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
                    <li class="breadcrumb-item active" aria-current="page">О компании</li>
                  </ol>
@@ -390,7 +394,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-2">
-              <section class="page">
+              <section class="page wow fadeInLeft">
                 <div class="page__wrapper">
                   <a href="about.html" class="page__link d-block text">О компании</a>
                   <a href="payment.html" class="page__link d-block text">Способы оплаты</a>
@@ -401,8 +405,8 @@
             </div>
             <div class="col-xxl-8 col-lg-7">
              <section class="support">
-               <h2 class="support__title">Помощь при покупке</h2>
-               <div class="support__accordion-wrapper" id="support__accordion">
+               <h2 class="support__title wow fadeInDown">Помощь при покупке</h2>
+               <div class="support__accordion-wrapper wow fadeInUp" id="support__accordion">
                 <div class="support__item">
                   <h4 class="support__accordion-header">
                     <button class="support__accordion-button d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
@@ -568,7 +572,7 @@
              </section>
              </div>
              <div class="col-xxl-2 col-xl-3">
-              <section class="basket">
+              <section class="basket wow fadeInRight">
                 <div class="basket__wrapper">
                   <h4 class="basket__tilte text-center">Корзина</h4>
                   <div class="basket__inner">
@@ -903,5 +907,13 @@
     ></script>
     <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+  mobile: false,
+});
+wow.init();
+
+    </script>
   </body>
 </html>

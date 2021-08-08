@@ -16,6 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/nouislider.min.css">
     <link rel="stylesheet" href="style/main.css" />
@@ -273,14 +274,17 @@
                 </ul>
               </div>
               <div class="header__logo-wrapper">
+                <a href="index.html"
+                >
                 <img
-                  class="header__logo"
-                  src="image/home-page/logo-mobil.svg"
-                  alt="logo"
+                class="header__logo"
+                src="image/home-page/logo-mobil.svg"
+                alt="logo"
                 />
+              </a>
               </div>
               <div class="header__personal-wrapper d-flex">
-              <div class="header__personal-button-wrapper">
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="17"
                   height="20"
@@ -297,8 +301,8 @@
                     fill="#222222"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper">
+              </a>
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="19"
                   height="18"
@@ -311,8 +315,8 @@
                     fill="black"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper header__basket">
+              </a>
+              <a href="basket.html" class="header__personal-button-wrapper header__basket">
                 <svg
                   width="18"
                   height="18"
@@ -333,7 +337,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </a>
             </div>
             </div>
             <div class="col-12">
@@ -373,7 +377,7 @@
     </header>
     <div class="wrapper">
       <main class="main">
-        <section class="bread">
+        <section class="bread wow fadeInLeft">
           <div class="container">
             <div class="row">
               <div class="col-12">
@@ -390,7 +394,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-2">
-              <section class="page">
+              <section class="page wow fadeInUp">
                 <div class="page__wrapper">
                   <a href="about.html" class="page__link d-block text active">О компании</a>
                   <a href="payment.html" class="page__link d-block text">Способы оплаты</a>
@@ -403,21 +407,21 @@
              <section class="about">
                <div class="row">
                <div class="col-xxl-6">
-                 <h2 class="about__title">О компании</h2>
+                 <h2 class="about__title wow fadeInLeft">О компании</h2>
                 <p class="about__text text">
-                  <span class="d-block">
+                  <span class="d-block wow fadeInDown">
                     Повседневная практика показывает, что реализация намеченных плановых заданий требуют от нас анализа направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям.
                   </span>
-                  <span class="d-block">
+                  <span class="d-block wow fadeInLeft">
                     Задача организации, в особенности же реализация намеченных плановых заданий способствует подготовки и реализации модели развития. Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также рамки и место обучения кадров способствует подготовки и реализации существенных финансовых и административных условий. Товарищи! укрепление и развитие структуры требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. 
                   </span>
-                  <span class="d-block">
+                  <span class="d-block wow fadeInUp">
                     Идейные соображения высшего порядка, а также рамки и место обучения кадров способствует подготовки системы обучения кадров, соответствует насущным потребностям. 
                   </span>
                 </p>
                </div>
                <div class="col-xxl-6">
-                 <div class="about__img-wrapper">
+                 <div class="about__img-wrapper wow fadeInUp">
                    <img src="image/about/photo-about.png" alt="Photo" class="about__img">
                  </div>
                </div>
@@ -425,7 +429,7 @@
              </section>
              </div>
              <div class="col-xxl-2 col-xl-3">
-              <section class="basket">
+              <section class="basket wow fadeInUp" data-wow-duration="2s">
                 <div class="basket__wrapper">
                   <h4 class="basket__tilte text-center">Корзина</h4>
                   <div class="basket__inner">
@@ -760,5 +764,13 @@
     ></script>
     <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+  mobile: false,
+});
+wow.init();
+
+    </script>
   </body>
 </html>

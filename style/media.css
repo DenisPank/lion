@@ -37,6 +37,9 @@
   .order__top {
     padding: 20px 30px;
   }
+  .basket__product {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 1400px) {
   .header__personal-button-wrapper {
@@ -364,6 +367,10 @@
   }
   .preview__button-prev {
     left: 30px;
+  }
+  .header__personal-button-wrapper:last-child:hover {
+    border: none;
+    background-color: transparent;
   }
 }
 @media screen and (max-width: 576px) {

@@ -16,6 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/nouislider.min.css">
     <link rel="stylesheet" href="style/main.css" />
@@ -273,14 +274,17 @@
                 </ul>
               </div>
               <div class="header__logo-wrapper">
+                <a href="index.html"
+                >
                 <img
-                  class="header__logo"
-                  src="image/home-page/logo-mobil.svg"
-                  alt="logo"
+                class="header__logo"
+                src="image/home-page/logo-mobil.svg"
+                alt="logo"
                 />
+              </a>
               </div>
               <div class="header__personal-wrapper d-flex">
-              <div class="header__personal-button-wrapper">
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="17"
                   height="20"
@@ -297,8 +301,8 @@
                     fill="#222222"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper">
+              </a>
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="19"
                   height="18"
@@ -311,8 +315,8 @@
                     fill="black"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper header__basket">
+              </a>
+              <a href="basket.html" class="header__personal-button-wrapper header__basket">
                 <svg
                   width="18"
                   height="18"
@@ -333,7 +337,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </a>
             </div>
             </div>
             <div class="col-12">
@@ -377,7 +381,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-               <nav aria-label="breadcrumb">
+               <nav aria-label="breadcrumb wow fadeInLeft">
                  <ol class="breadcrumb">
                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
                    <li class="breadcrumb-item active" aria-current="page">О компании</li>
@@ -390,7 +394,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-2">
-              <section class="page">
+              <section class="page wow fadeInUp">
                 <div class="page__wrapper">
                   <a href="about.html" class="page__link d-block text">О компании</a>
                   <a href="payment.html" class="page__link d-block text active">Способы оплаты</a>
@@ -401,21 +405,21 @@
             </div>
             <div class="col-xxl-8 col-lg-7">
              <section class="payment">
-               <h2 class="payment__title">Способы оплаты</h2>
+               <h2 class="payment__title wow fadeInDown">Способы оплаты</h2>
                <div class="payment__way d-md-flex">
-                 <div class="payment__way-wrapper d-flex align-items-center">
+                 <div class="payment__way-wrapper d-flex align-items-center wow fadeInleft">
                    <div>
                      <img src="image/payment/payment-icon (2).png" alt="Icon" class="payment__icon">
                    </div>
                    <p class="payment__text text">Пластиковой картой на сайте</p>
                  </div>
-                 <div class="payment__way-wrapper d-flex align-items-center">
+                 <div class="payment__way-wrapper d-flex align-items-center wow fadeInRight">
                    <div>
                      <img src="image/payment/payment-icon (3).png" alt="Icon" class="payment__icon">
                    </div>
                    <p class="payment__text text">Пластиковой картой курьеру</p>
                  </div>
-                 <div class="payment__way-wrapper d-flex align-items-center">
+                 <div class="payment__way-wrapper d-flex align-items-center wow fadeInUp">
                    <div>
                      <img src="image/payment/payment-icon (1).png" alt="Icon" class="payment__icon">
                    </div>
@@ -424,30 +428,30 @@
                </div>
                <div class="payment__text-wrapper">
                  <p class="payment__paragraph text">
-                   <span class="d-block">Вы сможете принять решение, оплачивать заказ или нет, после того, как
+                   <span class="d-block wow fadeInUp" data-wow-duration="1s">Вы сможете принять решение, оплачивать заказ или нет, после того, как
 полностью проверите его. Если вам что-то не понравится, мы просто
 вычеркнем эту позицию из чека. К оплате принимаются платежные карты: VISA Inc, MasterCard WorldWide, ПС МИР. Для оплаты товара банковской картой при оформлении заказа в интернет-магазине обратитесь к продавцу для уточнения деталей. После уточнения Вам на электронную почту либо в SMS на номер телефона будет направлена ссылка на оплату.
 </span>
-                   <span class="d-block">
+                   <span class="d-block wow fadeInUp" data-wow-duration="1.4s">
 При оплате заказа банковской картой, обработка платежа происходит на авторизационной странице ПАО «МОСКОВСКИЙ КРЕДИТНЫЙ БАНК», где Вам необходимо ввести данные Вашей банковской карты:
 </span>
-                   <span class="d-block">
+                   <span class="d-block wow fadeInUp" data-wow-duration="1.8s">
 тип карты номер карты срок действия карты (указан на лицевой стороне карты)
 Имя держателя карты (латинскими буквами, точно также как указано на карте)
 CVC2/CVV2 код
 </span>
-                   <span class="d-block">
+                   <span class="d-block wow fadeInUp" data-wow-duration="2.2s">
                     Безопасность обработки интернет-платежей через ПАО «МОСКОВСКИЙ КРЕДИТНЫЙ БАНК» гарантирована международным сертификатом безопасности PCI DSS.
 </span>
                  </p>
                </div>
-               <div class="payment__map">
+               <div class="payment__map wow fadeInUp">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06fda4574f21930267311f7fd0ba6120ce3883c80501868f6284fac419420a4c&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
                </div>
              </section>
              </div>
              <div class="col-xxl-2 col-xl-3">
-              <section class="basket">
+              <section class="basket wow fadeInRight">
                 <div class="basket__wrapper">
                   <h4 class="basket__tilte text-center">Корзина</h4>
                   <div class="basket__inner">
@@ -782,5 +786,13 @@ CVC2/CVV2 код
     ></script>
     <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+  mobile: false,
+});
+wow.init();
+
+    </script>
   </body>
 </html>

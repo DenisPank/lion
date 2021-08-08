@@ -16,6 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/nouislider.min.css">
     <link rel="stylesheet" href="style/main.css" />
@@ -273,14 +274,17 @@
                 </ul>
               </div>
               <div class="header__logo-wrapper">
+                <a href="index.html"
+                >
                 <img
-                  class="header__logo"
-                  src="image/home-page/logo-mobil.svg"
-                  alt="logo"
+                class="header__logo"
+                src="image/home-page/logo-mobil.svg"
+                alt="logo"
                 />
+              </a>
               </div>
               <div class="header__personal-wrapper d-flex">
-              <div class="header__personal-button-wrapper">
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="17"
                   height="20"
@@ -297,8 +301,8 @@
                     fill="#222222"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper">
+              </a>
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="19"
                   height="18"
@@ -311,8 +315,8 @@
                     fill="black"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper header__basket">
+              </a>
+              <a href="basket.html" class="header__personal-button-wrapper header__basket">
                 <svg
                   width="18"
                   height="18"
@@ -333,7 +337,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </a>
             </div>
             </div>
             <div class="col-12">
@@ -374,10 +378,10 @@
     <div class="wrapper">
       <main class="main">
       <div class="container">
-        <div class="row order__section">
+        <form action="#" method="GET" class="row order__section">
           <div class="order__left col-md-6">
             <div class="order__section-wrap col-12">
-              <section class="order">
+              <section class="order wow fadeInUp">
               <div class="order__wrapper">
                 <div class="order__top d-flex align-items-center">
                   <div>
@@ -386,9 +390,11 @@
                   <h4 class="order__title">Регион доставки</h4>
                 </div>
                 <div class="order__bottom">
-                    <form class="order__location position-relative">
-                      <label for="searchLocation">* Местоположение</label>
-                      <input class="form-control order__input" type="text" placeholder="Белгород, Белгородская область, Россия" aria-label="Search" id="searchLocation" value="Белгород,">
+                    <div class="order__location position-relative">
+                      <label for="searchLocation"><span class="order__star">
+                        * 
+                      </span> Местоположение</label>
+                      <input class="form-control order__input" type="text" placeholder="Белгород, Белгородская область, Россия" aria-label="Search" id="searchLocation" value="Белгород," required>
                       <span class="order__clear" onclick="this.previousElementSibling.value = ''">
                         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="12.7273" height="1.41414" rx="0.707072" transform="matrix(0.707073 0.70714 -0.707073 0.70714 1.00098 2.28882e-05)" fill="#929292"/>
@@ -401,10 +407,12 @@
                         </svg>
                         </button>
                        
-                    </form>
+                    </div>
                   <div class="order__index position-relative">
-                    <label for="index" class="order__index-label">* Индекс</label>
-                    <input type="text" class="order__index-input order__input w-100" id="index" placeholder="">
+                    <label for="index" class="order__index-label"><span class="order__star">
+                      * 
+                    </span> Индекс</label>
+                    <input type="text" class="order__index-input order__input w-100" id="index" placeholder="" required>
                     <span class="order__clear" onclick="this.previousElementSibling.value = ''">
                       <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="12.7273" height="1.41414" rx="0.707072" transform="matrix(0.707073 0.70714 -0.707073 0.70714 1.00098 2.28882e-05)" fill="#929292"/>
@@ -418,7 +426,7 @@
             </section>
             </div>
             <div class="order__section-wrap pe-2 col-xl-6 col-12">
-              <div class="order__wrapper">
+              <div class="order__wrapper wow fadeInLeft">
                 <div class="order__top d-flex align-items-center">
                   <div>
                     <img src="image/order/icon (2).png" alt="" class="order__top-img">
@@ -427,7 +435,7 @@
                 </div>
                 <div class="order__bottom">
                   <div class="order__delivery-wrapper">
-                    <input class="d-none" type="radio" name="delivery" id="runner">
+                    <input class="d-none" type="radio" name="delivery" id="runner" checked>
                     <label for="runner" class="order__delivery-text d-flex">СДЭК (Доставка курьером)
                     </label>
                     <p class="order__ranner-text">
@@ -445,7 +453,7 @@
               </div>
             </div>
             <div class="order__section-wrap ps-2 col-xl-6 col-12">
-              <div class="order__wrapper">
+              <div class="order__wrapper wow fadeInRight">
                 <div class="order__top d-flex align-items-center">
                   <div>
                     <img src="image/order/icon (1).png" alt="" class="order__top-img">
@@ -464,7 +472,7 @@
               </div>
             </div>
             <div class="order__section-wrap col-12">
-              <div class="order__wrapper">
+              <div class="order__wrapper wow fadeInUp">
                 <div class="order__top d-flex align-items-center">
                   <div>
                     <img src="image/order/icon (5).png" alt="" class="order__top-img">
@@ -520,29 +528,29 @@
               </div>
             </div>
             <div class="order__section-wrap col-12">
-              <div class="order__date">
-                <input type="checkbox" id="date" name="date" class="d-none" required>
+              <div class="order__date wow fadeInRight">
+                <input type="checkbox" id="date" name="date" class="d-none order__date-input" required>
                 <label for="date" class="order__label-date position-relative">  
                  <span></span> Нажимая кнопку «Оформить заказ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</label>
-              </div>
-              <button type="submit" class="order__btn btn">Оформить заказ</button>
+                 <button type="submit" class="order__btn btn">Оформить заказ</button>
+                </div>
             </div>
           </div>
           <div class="order__right col-md-6">
             <div class="order__section-wrap col-12">
               <section class="area">
-                <p class="area__attention text">Внимание!</p>
-                <p class="area__attention-text text">Доставка продуктов осуществляется только в пределах Белгородского района.
+                <p class="area__attention text wow fadeInRight">Внимание!</p>
+                <p class="area__attention-text text wow fadeInUp">Доставка продуктов осуществляется только в пределах Белгородского района.
                   Районы доступные для доставки Вы можете посмотреть на карте.</p>
-                  <div class="area__map">
+                  <div class="area__map wow fadeInLeft">
                     <img src="image/order/area.png" alt="Map" class="area__map-img">
                   </div>
-                  <div class="progress area__progress-wrapper">
+                  <div class="progress area__progress-wrapper wow fadeInRight">
                     <p class="area__text-prog text">Время доставки составит 1 час</p>
                     <div class="area__progress progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"  style="width: 15%; background-color:#7dd0a1;">
                     </div>
                   </div>
-                  <div class="progress area__progress-wrapper">
+                  <div class="progress area__progress-wrapper wow fadeInLeft">
                     <p class="area__text-prog text">Время доставки составит 1 час</p>
                     <div class="area__progress progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"  style="width: 15%; background-color:#F6C078;">
                     </div>
@@ -550,7 +558,7 @@
               </section>
             </div>
             <div class="order__section-wrap col-12">
-              <div class="order__wrapper">
+              <div class="order__wrapper wow fadeInUp">
                 <div class="order__top d-flex align-items-center">
                   <div>
                     <img src="image/order/icon (3).png" alt="" class="order__top-img">
@@ -606,7 +614,7 @@
               </div>
             </div>
             <div class="order__section-wrap col-12">
-              <div class="order__result text">
+              <div class="order__result text wow fadeInUp">
                 <p class="order__result-on d-flex justify-content-between">
                   <span class="d-block order__result-first">Товаров на:</span>
                   <span class="d-block">18 597 руб.</span>
@@ -631,7 +639,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
       </main>
       <footer class="footer">
@@ -741,5 +749,13 @@
     ></script>
     <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+  mobile: false,
+});
+wow.init();
+
+    </script>
   </body>
 </html>

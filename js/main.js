@@ -109,7 +109,7 @@ const brandSwiper = new Swiper(".brand__swiper", {
       spaceBetween: 10,
       slidesPerGroup: 1,
     },
-    576: {
+    577: {
       spaceBetween: 10,
       slidesPerView: 2.5,
       slidesPerGroup: 1,
@@ -251,7 +251,7 @@ const cardSwiperSmall = new Swiper(".card-product__swiper-small", {
       slidesPerView: 2,
       spaceBetween: 0,
     },
-    576: {
+    577: {
       slidesPerView: 4,
     },
   },
@@ -295,4 +295,7 @@ btns.forEach((btn) => {
     }
     inp.value = newValue;
   });
+});
+$("#like").click(function () {
+  $("#like").toggleClass("like");
 });

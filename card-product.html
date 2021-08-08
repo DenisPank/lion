@@ -16,6 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/nouislider.min.css">
     <link rel="stylesheet" href="style/main.css" />
@@ -273,14 +274,17 @@
                 </ul>
               </div>
               <div class="header__logo-wrapper">
+                <a href="index.html"
+                >
                 <img
-                  class="header__logo"
-                  src="image/home-page/logo-mobil.svg"
-                  alt="logo"
+                class="header__logo"
+                src="image/home-page/logo-mobil.svg"
+                alt="logo"
                 />
+              </a>
               </div>
               <div class="header__personal-wrapper d-flex">
-              <div class="header__personal-button-wrapper">
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="17"
                   height="20"
@@ -297,8 +301,8 @@
                     fill="#222222"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper">
+              </a>
+              <a href="#" class="header__personal-button-wrapper">
                 <svg
                   width="19"
                   height="18"
@@ -311,8 +315,8 @@
                     fill="black"
                   />
                 </svg>
-              </div>
-              <div class="header__personal-button-wrapper header__basket">
+              </a>
+              <a href="basket.html" class="header__personal-button-wrapper header__basket">
                 <svg
                   width="18"
                   height="18"
@@ -333,7 +337,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </a>
             </div>
             </div>
             <div class="col-12">
@@ -377,7 +381,7 @@
          <div class="container">
            <div class="row">
              <div class="col-12">
-              <nav aria-label="breadcrumb">
+              <nav aria-label="breadcrumb wow fadeInLeft">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Главная</a></li>
                   <li class="breadcrumb-item"><a href="#">Каталог</a></li>
@@ -392,7 +396,7 @@
        <div class="container">
          <div class="row">
            <div class="col-xl-3 col-xxl-2">
-             <section class="catalog">
+             <section class="catalog wow fadeInLeft">
                <div class="catalog__wrapper">
                  <div class="catalog__inner">
                    <h3 class="catalog__title">КАТАЛОГ</h3>
@@ -608,7 +612,7 @@
              </section>
            </div>
            <div class="col-xl-9 col-xxl-10">
-             <section class="card-product">
+             <section class="card-product wow fadeInUp">
                <div class="row">
                <div class="col-md-6 col-xxl-5 col-xl-6 d-flex">
 <div class="card-swiper order-2">
@@ -767,10 +771,9 @@
                       </form>
                     </div>
                     <button class="card__product-btn btn">в корзину</button>
-                    <button class="card__like" type="submit"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.5 17.1854L9.16471 16.896C1.95588 10.8204 0 8.67947 0 5.20768C0 2.31453 2.23529 0 5.02941 0C7.32059 0 8.60588 1.33085 9.5 2.37239C10.3941 1.33085 11.6794 0 13.9706 0C16.7647 0 19 2.31453 19 5.20768C19 8.67947 17.0441 10.8204 9.83529 16.896L9.5 17.1854ZM5.02941 1.15726C2.85 1.15726 1.11765 2.95102 1.11765 5.20768C1.11765 8.1587 2.90588 10.1261 9.5 15.6809C16.0941 10.1261 17.8824 8.1587 17.8824 5.20768C17.8824 2.95102 16.15 1.15726 13.9706 1.15726C12.0147 1.15726 10.9529 2.37239 10.1147 3.35606L9.5 4.10828L8.88529 3.35606C8.04706 2.37239 6.98529 1.15726 5.02941 1.15726Z" fill="#C7011A"/>
+                    <button class="card__like" type="submit" id="like"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.45858 15.7635L8.45786 15.7628C6.00153 13.5416 4.00331 11.7337 2.61316 10.0388C1.2287 8.3509 0.5 6.83636 0.5 5.21053C0.5 2.57008 2.57383 0.5 5.225 0.5C6.72712 0.5 8.17624 1.19977 9.11977 2.30469L9.5 2.74996L9.88023 2.30469C10.8238 1.19977 12.2729 0.5 13.775 0.5C16.4262 0.5 18.5 2.57008 18.5 5.21053C18.5 6.83636 17.7713 8.35093 16.3867 10.0401C14.9985 11.7339 13.004 13.5413 10.5525 15.7629L10.5428 15.7717L10.5417 15.7727L9.50128 16.7101L8.45858 15.7635Z" fill="#fff" stroke="#C7011A"/>
                       </svg>
-                      
                       </button>
                 </div>
                 <div class="card-product__have">Наличие: <span>в наличии</span></div>
@@ -781,7 +784,7 @@
             </div>
           </div>
              </section>
-             <section class="comments">
+             <section class="comments wow fadeInRight">
             <div class="comments__tab-wrapper d-flex position-relative">
               <div class="comments__tab-inner">
                 <a href="#" class="comments__tab comments__tab-1 text active">О товаре</a>
@@ -1148,7 +1151,7 @@
               </div>
             </div>
              </section>
-             <section class="also">
+             <section class="also wow fadeInLeft">
                <h4 class="also__title">С этим товаром покупают</h4>
                <div class="also__swiper swiper">
                 <div class="swiper-wrapper">
@@ -1307,14 +1310,14 @@
                </div>
                 </div>
                 <div class="swiper-pagination also__pagination"></div>
-                <a href="#" class="swiper__all-product hint position-absolute">Все акционные товары раздела</a>
+                <a href="catalog.html" class="swiper__all-product hint position-absolute">Все акционные товары раздела</a>
                 <div class="swiper__button-wrapper position-absolute col-1">
                   <div class="swiper-button-prev also__prev"></div>
                   <div class="swiper-button-next also__next"></div>
                 </div>
               </div>
              </section>
-             <section class="prepare">
+             <section class="prepare wow fadeInUp">
               <h4 class="prepare__title">Что приготовить сегодня</h4>
               <div class="prepare__swiper swiper">
                 <div class="swiper-wrapper">
@@ -1558,7 +1561,7 @@
                </div>
                 </div>
                 <div class="swiper-pagination prepare__pagination"></div>
-                <a href="#" class="swiper__all-product hint position-absolute">Все акционные товары раздела</a>
+                <a href="catalog.html" class="swiper__all-product hint position-absolute">Все акционные товары раздела</a>
                 <div class="swiper__button-wrapper position-absolute col-1">
                   <div class="swiper-button-prev prepare__prev"></div>
                   <div class="swiper-button-next prepare__next"></div>
@@ -1676,5 +1679,13 @@
     ></script>
     <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+  mobile: false,
+});
+wow.init();
+
+    </script>
   </body>
 </html>
