@@ -1819,7 +1819,7 @@ nav[aria-label="breadcrumb"] {
   text-align: center;
   width: 23px;
   padding: 0;
-  margin: 0 25px 0 10px;
+  margin: 0 25px 0 9px;
 }
 .set__alert {
   color: #676767;
@@ -1836,8 +1836,8 @@ nav[aria-label="breadcrumb"] {
   font-size: 16px;
   line-height: 1.25em;
   color: #676767;
-  bottom: 2px;
-  left: 60px;
+  bottom: 3px;
+  left: 58px;
 }
 .basket__product {
   margin-bottom: 15px;
