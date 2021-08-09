@@ -397,7 +397,15 @@
     padding: 10px;
   }
   .shop__card {
-    max-width: 230px;
+    max-width: calc(50% - 15px);
+  }
+  .card__img-wrapper {
+    max-width: 100%;
+    margin-bottom: 0;
+    height: fit-content;
+  }
+  .card__img-wrapper::after {
+    top: 20px;
   }
   .recipe__card-all {
     padding: 10px;
@@ -614,9 +622,7 @@
     height: 30px;
     padding: 6px;
   }
-  .shop__card {
-    max-width: 100%;
-  }
+
   .preview__slide:nth-child(1) {
     background-size: 90%;
   }
@@ -647,5 +653,13 @@
   }
   .stock__mobil-swiper {
     max-height: 640px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .shop__card {
+    max-width: 100%;
+  }
+  .stock__mobil-swiper {
+    max-height: 590px;
   }
 }
