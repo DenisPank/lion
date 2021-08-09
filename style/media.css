@@ -207,7 +207,7 @@
   }
   .preview__slide:nth-child(3) {
     background-image: none;
-    background-color: #f09e00;
+    background-color: #47ba02;
   }
 
   .shop__card {
@@ -554,8 +554,7 @@
     width: 100%;
   }
   .stock__slide {
-    margin: 7px 0;
-    max-width: 48%;
+    max-width: 100%;
     padding: 10px 10px;
     border-radius: 15px;
   }
@@ -601,6 +600,20 @@
     padding: 16px;
   }
 }
+@media screen and (max-width: 475px) {
+  .stock__mobil-swiper {
+    max-height: 700px;
+  }
+  .stock__mobil-swiper .swiper-slide {
+    top: 30px;
+  }
+  .stock {
+    padding: 15px 0 0;
+  }
+  .banner {
+    padding: 10px 0 25px;
+  }
+}
 @media screen and (max-width: 425px) {
   .stock__slide-btn {
     max-width: 30px;
@@ -637,5 +650,8 @@
   }
   .area {
     padding-top: 10px;
+  }
+  .stock__mobil-swiper {
+    max-height: 600px;
   }
 }

@@ -49,6 +49,22 @@ const stockSwiper = new Swiper(".stock__swiper", {
     },
   },
 });
+const stockmobilSwiper = new Swiper(".stock__mobil-swiper", {
+  slidesPerView: 2,
+  slidesPerColumn: 2,
+  spaceBetween: 20,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    475: {
+      slidesPerView: 2,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+  },
+});
 const recipeSwiper = new Swiper(".recipe__swiper", {
   navigation: {
     nextEl: ".recipe__next",
