@@ -31,13 +31,18 @@ const stockSwiper = new Swiper(".stock__swiper", {
   },
   slidesPerView: 6,
   spaceBetween: 20,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     475: {
       slidesPerView: 2,
     },
+    576: {},
     768: {
       slidesPerView: 3,
     },
@@ -49,23 +54,7 @@ const stockSwiper = new Swiper(".stock__swiper", {
     },
   },
 });
-const stockmobilSwiper = new Swiper(".stock__mobil-swiper", {
-  slidesPerView: 2,
-  slidesPerColumn: 2,
-  slidesPerGroup: 1,
-  spaceBetween: 20,
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-    475: {
-      slidesPerView: 2,
-    },
-    576: {
-      slidesPerView: 2,
-    },
-  },
-});
+
 const recipeSwiper = new Swiper(".recipe__swiper", {
   navigation: {
     nextEl: ".recipe__next",
@@ -79,8 +68,13 @@ const recipeSwiper = new Swiper(".recipe__swiper", {
   spaceBetween: 20,
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 10,
+    },
+    576: {
+      slidesPerView: 1.4,
+      slidesPerGroup: 2,
       spaceBetween: 10,
     },
     768: {
@@ -164,6 +158,10 @@ const alsoSwiper = new Swiper(".also__swiper", {
   slidesPerView: 5,
   spaceBetween: 20,
   slidesPerGroup: 5,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1.1,
@@ -210,12 +208,14 @@ const prepareSwiper = new Swiper(".prepare__swiper", {
   slidesPerGroup: 5,
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+      slidesPerGroup: 2,
     },
     475: {
-      slidesPerView: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+      slidesPerGroup: 2,
     },
     576: {
       slidesPerView: 1.8,

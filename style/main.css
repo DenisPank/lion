@@ -889,12 +889,15 @@ nav[aria-label="breadcrumb"] {
   margin-bottom: 30px;
 }
 .catalog__brand-inner::-webkit-scrollbar,
-.basket__inner::-webkit-scrollbar {
+.basket__inner::-webkit-scrollbar,
+*::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
   background-color: transparent;
 }
 .catalog__brand-inner::-webkit-scrollbar-thumb,
-.basket__inner::-webkit-scrollbar-thumb {
+.basket__inner::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: #929292;
 }
@@ -1868,6 +1871,9 @@ nav[aria-label="breadcrumb"] {
 .prepare__title-card {
   margin-bottom: 5px;
 }
+.prepare__title-card:hover {
+  text-decoration: underline;
+}
 .card__product:hover .card__img-wrapper,
 .card__product:hover .card__price,
 .card__product:hover .card__name {
@@ -1909,4 +1915,12 @@ nav[aria-label="breadcrumb"] {
 }
 .recipe__card-title:hover {
   text-decoration: underline;
+}
+.about__img-wrapper-mobil {
+  display: none;
+}
+.area__map-mobil {
+  display: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
