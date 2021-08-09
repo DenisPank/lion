@@ -52,6 +52,7 @@ const stockSwiper = new Swiper(".stock__swiper", {
 const stockmobilSwiper = new Swiper(".stock__mobil-swiper", {
   slidesPerView: 2,
   slidesPerColumn: 2,
+  slidesPerGroup: 1,
   spaceBetween: 20,
   breakpoints: {
     320: {

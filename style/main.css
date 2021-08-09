@@ -1249,6 +1249,7 @@ nav[aria-label="breadcrumb"] {
 .also__img-wrpper {
   max-width: 100px;
   width: 100%;
+  height: 100px;
   margin-right: 20px;
 }
 .also__wrapper {
