@@ -40,11 +40,19 @@
   .basket__product {
     flex-wrap: wrap;
   }
+  .basket__inner::after {
+    top: auto;
+    bottom: 162px;
+  }
 }
 @media screen and (max-width: 1400px) {
   .header__personal-button-wrapper {
     width: 100%;
     margin: 5px 0;
+  }
+  .basket__inner::after {
+    top: auto;
+    bottom: 122px;
   }
   .basket__wrapper {
     padding: 15px 10px;
@@ -93,6 +101,9 @@
   .order__bottom {
     padding: 30px 10px 60px 10px;
   }
+  .basket {
+    margin-bottom: 180px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .header__personal-button-wrapper {
@@ -101,6 +112,9 @@
   }
   .header__basket {
     width: 40px;
+  }
+  .basket {
+    margin-bottom: 0;
   }
   .recipe__card {
     margin: 0 auto;
@@ -610,6 +624,10 @@
   }
   .card__product {
     border-radius: 15px;
+  }
+  .basket__inner::after {
+    top: auto;
+    bottom: 115px;
   }
 }
 @media screen and (max-width: 475px) {

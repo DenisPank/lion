@@ -988,16 +988,35 @@ nav[aria-label="breadcrumb"] {
 }
 /* basket  */
 .basket__inner {
-  padding: 15px 0 5px;
+  padding: 15px 18px 5px;
   margin-bottom: 20px;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
   margin-top: 15px;
   overflow-y: auto;
   max-height: 50vh;
 }
+.basket__inner::after,
+.basket__inner::before {
+  content: "";
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  position: absolute;
+  width: calc(100% - 36px);
+  background-color: #e5e5e5;
+  height: 1px;
+  z-index: 9999;
+}
+.basket__inner::after {
+  top: auto;
+  bottom: 122px;
+}
 .basket__sum .sum-text {
   color: #929292;
+}
+.basket__sum,
+.basket__btn-wrapper {
+  padding: 0 18px;
 }
 .basket__btn {
   width: 100%;
@@ -1010,12 +1029,14 @@ nav[aria-label="breadcrumb"] {
   background: #ffffff;
   box-shadow: 0px 4px 54px 8px rgba(0, 0, 0, 0.05);
   border-radius: 30px;
-  padding: 15px 18px;
+  padding: 15px 0;
+  position: relative;
 }
 .basket {
   padding: 0;
   position: sticky;
   top: 30px;
+  margin-bottom: 220px;
 }
 .card-swiper {
   overflow: hidden;
@@ -1885,4 +1906,7 @@ nav[aria-label="breadcrumb"] {
 }
 .stock__mobil-swiper .swiper-slide {
   height: fit-content;
+}
+.recipe__card-title:hover {
+  text-decoration: underline;
 }
