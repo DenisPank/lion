@@ -460,6 +460,7 @@
   }
   .stock__mobil {
     display: flex;
+    flex-direction: column;
   }
   h1 {
     font-size: 24px;
@@ -572,7 +573,6 @@
   .stock__all-product {
     transform: none;
     width: fit-content;
-    margin-top: 25px;
     width: 100%;
     text-align: left;
     display: block;
