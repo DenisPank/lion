@@ -607,12 +607,6 @@
   .stock__mobil-swiper .swiper-slide {
     top: 30px;
   }
-  .stock {
-    padding: 15px 0 0;
-  }
-  .banner {
-    padding: 10px 0 25px;
-  }
 }
 @media screen and (max-width: 425px) {
   .stock__slide-btn {
