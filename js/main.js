@@ -325,3 +325,6 @@ if (document.documentElement.clientWidth > 992) {
     $(".basket").toggleClass("basket-visible");
   });
 }
+if (document.documentElement.clientWidth < 768) {
+  $(".catalog__wrapper-show").removeClass("show");
+}

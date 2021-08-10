@@ -465,12 +465,13 @@
     background-position: 140px bottom;
     background-size: 80%;
   }
+
   .card-product__rating-comm {
     margin-left: 0;
   }
   .swiper-pagination.stock__pagination.swiper-pagination-bullets {
     display: block;
-    bottom: 20px;
+    bottom: 27px;
   }
   .stock__all-product {
     padding-left: 15px;
@@ -758,6 +759,9 @@
   }
   .hint {
     font-size: 12px;
+  }
+  .stock__swiper {
+    padding-bottom: 65px;
   }
 }
 @media screen and (max-width: 475px) {
