@@ -319,7 +319,9 @@ btns.forEach((btn) => {
 $("#like").click(function () {
   $("#like").toggleClass("like");
 });
-$(".header__basket").click(function (e) {
-  e.preventDefault();
-  $(".basket").toggleClass("basket-visible");
-});
+if (document.documentElement.clientWidth > 992) {
+  $(".header__basket").click(function (e) {
+    e.preventDefault();
+    $(".basket").toggleClass("basket-visible");
+  });
+}

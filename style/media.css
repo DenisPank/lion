@@ -274,6 +274,10 @@
     border-radius: 30px;
     overflow: hidden;
   }
+  .basket {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 @media screen and (max-width: 768px) {
   .order__section-wrap-mobil {
