@@ -320,7 +320,7 @@ $("#like").click(function () {
   $("#like").toggleClass("like");
 });
 $(".header__basket").click(function (e) {
-  e.preventDefault();
+  // e.preventDefault();
   $(".basket").toggleClass("basket-visible");
 });
 if (document.documentElement.clientWidth < 768) {
