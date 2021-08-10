@@ -244,6 +244,11 @@ img {
   background-color: #222222;
   padding: 5px 0;
 }
+.header__filter-link {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
 .header__catalog-link-mobil {
   display: block;
   margin: 0 0 15px;
@@ -258,10 +263,7 @@ img {
   margin-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
-.header__btn-catalog-mobil[aria-expanded="true"] svg {
-  transform: rotate(180deg);
-  transition: transform 0.4s ease;
-}
+
 .header__personal-button-wrapper:hover .link-header {
   border-bottom: 1px solid #222222;
 }
@@ -272,10 +274,7 @@ img {
 .header__dropdown {
   width: fit-content;
 }
-.header__btn-catalog-mobil[aria-expanded="false"] svg {
-  transform: rotate(0deg);
-  transition: transform 0.4s ease;
-}
+
 .header__dropdown-btn[aria-expanded="true"] .header__menu-burger {
   transform: rotate(360deg);
   transition: transform 1s ease;
@@ -854,7 +853,10 @@ nav[aria-label="breadcrumb"] {
   transform: rotate(180deg) translateY(3px);
 }
 .catalog__price-inner {
-  padding: 40px 0 70px;
+  padding: 40px 0 40px;
+}
+.catalog__title:hover {
+  text-decoration: underline;
 }
 .catalog__price,
 .catalog__production,
@@ -1040,6 +1042,8 @@ nav[aria-label="breadcrumb"] {
   position: sticky;
   top: 30px;
   margin-bottom: 220px;
+  opacity: 0;
+  pointer-events: none;
 }
 .card-swiper {
   overflow: hidden;
@@ -1923,4 +1927,7 @@ nav[aria-label="breadcrumb"] {
   display: none;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+.order__section-wrap-mobil {
+  display: none;
 }

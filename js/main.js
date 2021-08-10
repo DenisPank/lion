@@ -42,7 +42,9 @@ const stockSwiper = new Swiper(".stock__swiper", {
     475: {
       slidesPerView: 2,
     },
-    576: {},
+    576: {
+      slidesPerView: 2.5,
+    },
     768: {
       slidesPerView: 3,
     },
@@ -316,3 +318,4 @@ btns.forEach((btn) => {
 $("#like").click(function () {
   $("#like").toggleClass("like");
 });
+$(".header__basket");
