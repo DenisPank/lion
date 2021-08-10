@@ -7,6 +7,7 @@ const swiper = new Swiper(".swiper-container", {
     el: ".preview__pagination",
   },
   centeredSlides: true,
+  loop: true,
   slidesPerView: 1.32,
   spaceBetween: 30,
   breakpoints: {
@@ -318,4 +319,7 @@ btns.forEach((btn) => {
 $("#like").click(function () {
   $("#like").toggleClass("like");
 });
-$(".header__basket");
+$(".header__basket").click(function (e) {
+  e.preventDefault();
+  $(".basket").toggleClass("basket-visible");
+});
