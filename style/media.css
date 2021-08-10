@@ -275,8 +275,10 @@
     overflow: hidden;
   }
   .basket {
-    opacity: 1;
-    pointer-events: auto;
+    display: none;
+  }
+  .basket-visible {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {
