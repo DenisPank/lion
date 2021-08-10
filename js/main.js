@@ -327,4 +327,5 @@ if (document.documentElement.clientWidth > 992) {
 }
 if (document.documentElement.clientWidth < 768) {
   $(".catalog__wrapper-show").removeClass("show");
+  $(".catalog__option-wrapper-show").removeClass("show");
 }

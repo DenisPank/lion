@@ -459,13 +459,24 @@
   .preview__slide:nth-child(7) .preview__content::after {
     background-image: url("../image/home-page/foot\ \(1\).png");
   }
+  .catalog__option-title {
+    top: 10px;
+  }
+  .catalog__wrapper {
+    margin-bottom: 30px;
+  }
+  .catalog__option-title.link-header.header__filter-link[aria-expanded="false"] {
+    display: flex !important;
+  }
 }
 @media screen and (max-width: 576px) {
   .preview__content::after {
     background-position: 140px bottom;
     background-size: 80%;
   }
-
+  .catalog__option-title {
+    top: 5px;
+  }
   .card-product__rating-comm {
     margin-left: 0;
   }

@@ -399,7 +399,7 @@
          <div class="row">
            <div class="col-xxl-2 col-xl-3">
              <section class="catalog  wow fadeInUp">
-               <div class="catalog__wrapper">
+               <div class="catalog__wrapper position-relative">
                  <div class="catalog__inner">
                    <a class="catalog__option-title link-header" data-bs-toggle="collapse" href="#collapseList" role="button" aria-expanded="false" aria-controls="collapseCatalog">
                     <h3 class="catalog__title">КАТАЛОГ</h3>
@@ -484,6 +484,17 @@
                   </ul>
                 </div>
                  </div>
+                 <a class="catalog__option-title link-header header__filter-link d-flex align-items-center" data-bs-toggle="collapse" href="#collapseOption" role="button" aria-expanded="false" aria-controls="collapseCatalog">
+
+                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(0);">
+                      <path d="M4.75593 6.41667C4.96019 6.71227 4.89913 6.46595 4.89913 12.358C4.89913 12.8853 5.50068 13.187 5.92466 12.8717C7.73635 11.5057 8.09832 11.3874 8.09832 10.7485C8.09832 6.45486 8.04828 6.69632 8.24153 6.41667L11.1835 2.41211H1.81396L4.75593 6.41667Z" fill="#F09E00"></path>
+                      <path d="M12.2946 0.326523C12.1895 0.125176 11.9833 0 11.7564 0H1.24067C0.750503 0 0.462091 0.552932 0.743267 0.954687C0.745577 0.958547 0.711351 0.911701 1.25413 1.65039H11.7429C12.2054 1.02088 12.5146 0.748896 12.2946 0.326523Z" fill="#F09E00"></path>
+                    </svg>
+                    <h6 style="font-size: 10px; margin-left: 10px;">ФИЛЬТР</h6>
+                </a>
+              <div class="catalog__option-wrapper-show collapse show" id="collapseOption">
+                
+              
                  <div class="catalog__option-wrapper">
                    <div class="catalog__price">
                       <a class="catalog__option-title link-header" data-bs-toggle="collapse" href="#collapseCatalog" role="button" aria-expanded="false" aria-controls="collapseCatalog">
@@ -614,12 +625,13 @@
                   </div>
                  </div>
                  </div>
+                </div>
                </div>
              </section>
            </div>
            <div class="col-xxl-8 col-xl-6">
              <section class="shop">
-              <div class="row px-3">
+              <div class="row" style="padding: 0 0.8rem;">
                 <div class="shop__hint-wrapper col-12 d-flex justify-content-start flex-xxl-wrap flex-nowrap  wow fadeInUp px-0">
                   <a href="#" class="shop__hint hint active">овощи</a>
                   <a href="#" class="shop__hint hint">фрукты</a>

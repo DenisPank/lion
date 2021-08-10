@@ -1930,3 +1930,6 @@ nav[aria-label="breadcrumb"] {
 .order__section-wrap-mobil {
   display: none;
 }
+.catalog__option-title.link-header.header__filter-link[aria-expanded="false"] {
+  display: none !important;
+}
