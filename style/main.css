@@ -263,7 +263,9 @@ img {
   margin-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
-
+.header__personal-wrap {
+  justify-content: space-between;
+}
 .header__personal-button-wrapper:hover .link-header {
   border-bottom: 1px solid #222222;
 }
@@ -515,10 +517,14 @@ img {
   width: 100%;
 }
 .preview__title {
+  position: relative;
+  z-index: 2;
   color: #fff;
   margin-bottom: 30px;
 }
 .preview__btn {
+  position: relative;
+  z-index: 2;
   padding: 14px 49px;
 }
 .preview__img-wrapper {
