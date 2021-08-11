@@ -1954,3 +1954,6 @@ nav[aria-label="breadcrumb"] {
 .catalog__option-title.link-header.header__filter-link[aria-expanded="false"] {
   display: none !important;
 }
+.stock__slide {
+  margin: 0 auto;
+}

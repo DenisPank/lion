@@ -758,7 +758,7 @@
     width: 100%;
   }
   .stock__slide {
-    max-width: 100%;
+    max-width: 92%;
     padding: 10px 10px;
     border-radius: 15px;
   }
@@ -811,11 +811,8 @@
   }
   .stock__swiper {
     padding-bottom: 65px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
-  }
-  .stock__slide {
-    box-shadow: none;
   }
 }
 @media screen and (max-width: 475px) {
@@ -832,9 +829,6 @@
     max-width: 30px;
     height: 30px;
     padding: 6px;
-  }
-  .stock__swiper {
-    max-width: 94%;
   }
   .shop__priority-link {
     margin-right: 12px;

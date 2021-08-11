@@ -31,7 +31,7 @@ const stockSwiper = new Swiper(".stock__swiper", {
     el: ".stock__pagination",
   },
   slidesPerView: 6,
-  spaceBetween: 20,
+  spaceBetween: 0,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
@@ -47,8 +47,14 @@ const stockSwiper = new Swiper(".stock__swiper", {
       slidesPerView: 2.5,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 3.2,
+      spaceBetween: 20,
     },
+    992: {
+      slidesPerView: 4.4,
+      spaceBetween: 20,
+    },
+
     1320: {
       slidesPerView: 5,
     },
