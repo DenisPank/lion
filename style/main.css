@@ -296,6 +296,20 @@ img {
   transition: transform 0.4s ease;
   transform: rotate(-45deg) translateY(-3px);
 }
+
+.header__dropdown-btn[aria-expanded="false"]
+  .header__menu-burger
+  .header__menu-line-1 {
+  transition: transform 0.4s ease;
+  transform: none;
+}
+.header__dropdown-btn[aria-expanded="false"]
+  .header__menu-burger
+  .header__menu-line-3 {
+  transition: transform 0.4s ease;
+  transform: none;
+}
+
 .btn-check:active + .btn-primary:focus,
 .btn-check:checked + .btn-primary:focus,
 .btn-primary.active:focus,
@@ -490,9 +504,10 @@ img {
 .preview__slide {
   padding: 100px 200px 80px 250px;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom center;
+  background-size: 95%;
+  background-position: center;
   position: relative;
+  border-radius: 100px;
 }
 
 .preview__content {

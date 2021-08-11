@@ -1,6 +1,6 @@
 @media screen and (max-width: 1720px) {
   .preview__slide {
-    padding: 20px 10px 20px 190px;
+    padding: 50px 10px 50px 190px;
   }
   .stock__wrapper div div {
     width: fit-content;
@@ -44,6 +44,10 @@
     top: auto;
     bottom: 162px;
   }
+  .header__basket {
+    width: 190px;
+    margin: 10px 0 0;
+  }
 }
 @media screen and (max-width: 1400px) {
   .header__personal-button-wrapper {
@@ -66,7 +70,6 @@
     text-align: center;
   }
   .preview__slide {
-    background-size: cover;
     border-radius: 60px;
   }
   .preview__button-next {
@@ -776,6 +779,8 @@
   }
   .stock__swiper {
     padding-bottom: 65px;
+    max-width: 95%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 475px) {
@@ -792,6 +797,9 @@
     max-width: 30px;
     height: 30px;
     padding: 6px;
+  }
+  .stock__swiper {
+    max-width: 94%;
   }
   .shop__priority-link {
     margin-right: 12px;
