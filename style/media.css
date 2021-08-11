@@ -814,6 +814,9 @@
     max-width: 95%;
     margin: 0 auto;
   }
+  .stock__slide {
+    box-shadow: none;
+  }
 }
 @media screen and (max-width: 475px) {
   .stock__mobil-swiper {
